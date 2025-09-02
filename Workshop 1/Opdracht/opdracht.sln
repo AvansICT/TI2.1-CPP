@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BoostVoorbeeld", "Opdracht 1\BoostVoorbeeld.vcxproj", "{DCB3F8DB-FD53-4CD5-94D6-CDC1D00AE281}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "boostvoorbeeld", "boostvoorbeeld\BoostVoorbeeld.vcxproj", "{DCB3F8DB-FD53-4CD5-94D6-CDC1D00AE281}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "robot", "robot\robot.vcxproj", "{94A11B46-5578-428D-AA38-8D97406F91DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{DCB3F8DB-FD53-4CD5-94D6-CDC1D00AE281}.Release|x64.Build.0 = Release|x64
 		{DCB3F8DB-FD53-4CD5-94D6-CDC1D00AE281}.Release|x86.ActiveCfg = Release|Win32
 		{DCB3F8DB-FD53-4CD5-94D6-CDC1D00AE281}.Release|x86.Build.0 = Release|Win32
+		{94A11B46-5578-428D-AA38-8D97406F91DD}.Debug|x64.ActiveCfg = Debug|x64
+		{94A11B46-5578-428D-AA38-8D97406F91DD}.Debug|x64.Build.0 = Debug|x64
+		{94A11B46-5578-428D-AA38-8D97406F91DD}.Debug|x86.ActiveCfg = Debug|Win32
+		{94A11B46-5578-428D-AA38-8D97406F91DD}.Debug|x86.Build.0 = Debug|Win32
+		{94A11B46-5578-428D-AA38-8D97406F91DD}.Release|x64.ActiveCfg = Release|x64
+		{94A11B46-5578-428D-AA38-8D97406F91DD}.Release|x64.Build.0 = Release|x64
+		{94A11B46-5578-428D-AA38-8D97406F91DD}.Release|x86.ActiveCfg = Release|Win32
+		{94A11B46-5578-428D-AA38-8D97406F91DD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
