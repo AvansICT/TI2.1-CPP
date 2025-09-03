@@ -1,0 +1,21 @@
+## Ignore Visual Studio temporary files, build results
+
+*.ipch
+*.user
+/Workshop 1/Helloworld/.vs
+/Workshop 1/Helloworld/Debug
+/Workshop 1/Helloworld/Release
+/Workshop 1/Helloworld/x64
+/Workshop 1/Helloworld/Helloworld/x64
+/Workshop 1/Helloworld/Helloworld/Debug
+/Workshop 1/Helloworld/Helloworld/Release
+/Workshop 1/Opdracht/.vs
+/Workshop 1/Opdracht/Debug
+/Workshop 1/Opdracht/Release
+/Workshop 1/Opdracht/x64
+/Workshop 1/Opdracht/boostvoorbeeld/x64
+/Workshop 1/Opdracht/boostvoorbeeld/Debug
+/Workshop 1/Opdracht/boostvoorbeeld/Release
+/Workshop 1/Opdracht/robot/x64
+/Workshop 1/Opdracht/robot/Debug
+/Workshop 1/Opdracht/robot/Release
