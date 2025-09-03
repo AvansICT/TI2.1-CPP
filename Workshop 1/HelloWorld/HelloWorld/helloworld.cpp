@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <print>    //C++23
 #include "log.hpp"
 #include "rekenen.hpp"
 
@@ -19,6 +20,7 @@ int globalAdd(int x, int y) {
 int main()
 {
     std::cout << "Hello World!\n";
+    std::print("Hello, World! C++23\n");
 	std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
 
 	int sum = globalAdd(5, 6);  // global function
