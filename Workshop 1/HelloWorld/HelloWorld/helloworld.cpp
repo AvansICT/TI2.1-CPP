@@ -20,8 +20,12 @@ int globalAdd(int x, int y) {
 int main()
 {
     std::cout << "Hello World!\n";
-    std::print("Hello, World! C++23\n");
-	std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
+    std::cout << "C++ language standard:" << _MSVC_LANG << " " << __cplusplus << std::endl;
+    std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
+
+    std::print("Hello, World! C++23\n");    // C++23 feature
+
+    LOG_DEBUG;
 
 	int sum = globalAdd(5, 6);  // global function
 	sum = rekenen::add(5, 6);   // namespace function
@@ -29,10 +33,11 @@ int main()
 	sum = r.add(5, 6);          // class method
 
     if (sum > 10) {
-        std::cout << "Meer dan tien";
+        std::cout << "Meer dan tien" << std::endl;
     } else {
-        std::cout << "Minder dan tien";
+        std::cout << "Minder dan tien" << std::endl;
     }
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

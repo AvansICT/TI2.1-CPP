@@ -11,12 +11,12 @@ namespace rekenen {
 	
 	Rekenen::Rekenen(void)
 	{
-		std::cout << "Rekenen Constructor" << std::endl;
+		std::cout << "Rekenen Constructor(" << __FUNCTION__ <<")" << std::endl;
 	}
 
 	Rekenen::~Rekenen(void)
 	{
-		std::cout << "Rekenen DeConstructor" << std::endl;
+		std::cout << "Rekenen DeConstructor(" << __FUNCTION__ << ")" << std::endl;
 	}
 
 	int Rekenen::add(int x, int y)
