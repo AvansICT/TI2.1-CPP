@@ -129,11 +129,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="mirror.hpp" />
+    <ClInclude Include="swap.hpp" />
     <ClInclude Include="crc.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mirror.cpp" />
+    <ClCompile Include="swap.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="crc.c" />
   </ItemGroup>

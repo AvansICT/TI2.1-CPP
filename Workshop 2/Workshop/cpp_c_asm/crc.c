@@ -61,69 +61,25 @@ static unsigned int crc32b(const unsigned char* buf, int length) {
 // Log buffer content in hex format to console
 static void logBuffer(const unsigned char* buf, unsigned int length)
 {
-    unsigned int idx;
+    const unsigned int bytesPerLine = 16;
 
-    for (idx = 0; idx <= length; idx += 16)
+    for (unsigned int idx = 0; idx < length; idx += bytesPerLine)
     {
-        // Log 16 bytes each line
-        if (length - idx >= 16)
+        // Print the offset
+        printf("0x%08x: ", idx);
+
+        // Print up to 16 bytes (or fewer if at end)
+        for (unsigned int j = 0; j < bytesPerLine; j++)
         {
-            printf("0x%08x: %02x %02x %02x %02x %02x %02x %02x %02x  %02x %02x %02x %02x %02x %02x %02x %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2], buf[idx + 3], buf[idx + 4], buf[idx + 5], buf[idx + 6], buf[idx + 7], buf[idx + 8], buf[idx + 9], buf[idx + 10], buf[idx + 11], buf[idx + 12], buf[idx + 13], buf[idx + 14], buf[idx + 15]);
+            if (idx + j < length)
+                printf("%02x ", buf[idx + j]);
+            else
+                printf("   "); // padding for alignment
+
+            // Add extra space after 8 bytes
+            if (j == 7) printf(" ");
         }
-        else
-        {
-            // Log remaining bytes
-            switch (length - idx)
-            {
-            default:
-            case 0:
-                break;
-            case 1:
-                printf("0x%08x: %02x\n", idx, buf[idx]);
-                break;
-            case 2:
-                printf("0x%08x: %02x %02x\n", idx, buf[idx], buf[idx + 1]);
-                break;
-            case 3:
-                printf("0x%08x: %02x %02x %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2]);
-                break;
-            case 4:
-                printf("0x%08x: %02x %02x %02x %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2], buf[idx + 3]);
-                break;
-            case 5:
-                printf("0x%08x: %02x %02x %02x %02x %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2], buf[idx + 3], buf[idx + 4]);
-                break;
-            case 6:
-                printf("0x%08x: %02x %02x %02x %02x %02x %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2], buf[idx + 3], buf[idx + 4], buf[idx + 5]);
-                break;
-            case 7:
-                printf("0x%08x: %02x %02x %02x %02x %02x %02x %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2], buf[idx + 3], buf[idx + 4], buf[idx + 5], buf[idx + 6]);
-                break;
-            case 8:
-                printf("0x%08x: %02x %02x %02x %02x %02x %02x %02x %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2], buf[idx + 3], buf[idx + 4], buf[idx + 5], buf[idx + 6], buf[idx + 7]);
-                break;
-            case 9:
-                printf("0x%08x: %02x %02x %02x %02x %02x %02x %02x %02x  %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2], buf[idx + 3], buf[idx + 4], buf[idx + 5], buf[idx + 6], buf[idx + 7], buf[idx + 8]);
-                break;
-            case 10:
-                printf("0x%08x: %02x %02x %02x %02x %02x %02x %02x %02x  %02x %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2], buf[idx + 3], buf[idx + 4], buf[idx + 5], buf[idx + 6], buf[idx + 7], buf[idx + 8], buf[idx + 9]);
-                break;
-            case 11:
-                printf("0x%08x: %02x %02x %02x %02x %02x %02x %02x %02x  %02x %02x %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2], buf[idx + 3], buf[idx + 4], buf[idx + 5], buf[idx + 6], buf[idx + 7], buf[idx + 8], buf[idx + 9], buf[idx + 10]);
-                break;
-            case 12:
-                printf("0x%08x: %02x %02x %02x %02x %02x %02x %02x %02x  %02x %02x %02x %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2], buf[idx + 3], buf[idx + 4], buf[idx + 5], buf[idx + 6], buf[idx + 7], buf[idx + 8], buf[idx + 9], buf[idx + 10], buf[idx + 11]);
-                break;
-            case 13:
-                printf("0x%08x: %02x %02x %02x %02x %02x %02x %02x %02x  %02x %02x %02x %02x %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2], buf[idx + 3], buf[idx + 4], buf[idx + 5], buf[idx + 6], buf[idx + 7], buf[idx + 8], buf[idx + 9], buf[idx + 10], buf[idx + 11], buf[idx + 12]);
-                break;
-            case 14:
-                printf("0x%08x: %02x %02x %02x %02x %02x %02x %02x %02x  %02x %02x %02x %02x %02x %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2], buf[idx + 3], buf[idx + 4], buf[idx + 5], buf[idx + 6], buf[idx + 7], buf[idx + 8], buf[idx + 9], buf[idx + 10], buf[idx + 11], buf[idx + 12], buf[idx + 13]);
-                break;
-            case 15:
-                printf("0x%08x: %02x %02x %02x %02x %02x %02x %02x %02x  %02x %02x %02x %02x %02x %02x %02x\n", idx, buf[idx], buf[idx + 1], buf[idx + 2], buf[idx + 3], buf[idx + 4], buf[idx + 5], buf[idx + 6], buf[idx + 7], buf[idx + 8], buf[idx + 9], buf[idx + 10], buf[idx + 11], buf[idx + 12], buf[idx + 13], buf[idx + 14]);
-                break;
-            }
-        }
+
+        printf("\n");
     }
 }

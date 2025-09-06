@@ -5,7 +5,7 @@
 #include <iostream>
 #include <print>    //C++23
 #include "crc.h"
-#include "mirror.hpp"
+#include "swap.hpp"
 
 // Declare external functions(implemented in assembly)
 extern "C" int addWithAsmX64(int a, int b);
@@ -41,6 +41,6 @@ int main()
 	// call C function to test CRC calculation
 	testcrc();  
     // call C++ function to test BitSwap
-    testMirror(); 
+    testSwap();
 	return 0;   
 }

@@ -3,9 +3,10 @@
 
 #define BUFFER_SIZE  256
 
+static uint8_t nibbleSwap(uint8_t x);
 static void logBuffer(const unsigned char* buf, unsigned int length);
 
-void testMirror(void)
+void testSwap(void)
 {
     int size = BUFFER_SIZE;
     int i;
@@ -21,17 +22,20 @@ void testMirror(void)
         buffer[i] = i; // fill buffer with some data
     }
 	
-	std::cout << __FUNCTION__ << " input buffer:\n";
+	std::cout << __FUNCTION__ << "buffer: before\n";
     logBuffer(buffer, BUFFER_SIZE);
     for (i = 0; i < BUFFER_SIZE; i++)
     {
-		// mirror byte
-        buffer[i] = 255 - i;
+	    buffer[i] = nibbleSwap(buffer[i]);
     }
-    std::cout << __FUNCTION__ << " output buffer:\n";
+    std::cout << __FUNCTION__ << " buffer: after\n";
     logBuffer(buffer, BUFFER_SIZE);
 	delete[] buffer; // free allocated memory
 	buffer = nullptr;// Setting pointer nullptr avoids dangling pointer issues.
+}
+
+static uint8_t nibbleSwap(uint8_t x) {
+    return (x << 4) | (x >> 4);
 }
 
 static void logBuffer(const unsigned char* buf, unsigned int length)
@@ -59,7 +63,7 @@ static void logBuffer(const unsigned char* buf, unsigned int length)
                 std::cout << "   ";
             }
 
-            // Add extra space in the middle (like your printf version)
+            // Add extra space in the middle
             if (j == 7) std::cout << " ";
         }
 
