@@ -1,3 +1,5 @@
+// demo of bitwise operations
+
 #include <iostream>
 #include <iomanip>
 

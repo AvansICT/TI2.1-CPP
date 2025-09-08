@@ -129,10 +129,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="bitdemo.hpp" />
     <ClInclude Include="swap.hpp" />
     <ClInclude Include="crc.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="bitdemo.cpp" />
     <ClCompile Include="swap.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="crc.c" />

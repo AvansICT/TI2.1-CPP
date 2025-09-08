@@ -3,9 +3,9 @@
 
 
 #include <iostream>
-#include <print>    //C++23
 #include "crc.h"
 #include "swap.hpp"
+#include "bitdemo.hpp"
 
 // Declare external functions(implemented in assembly)
 extern "C" int addWithAsmX64(int a, int b);
@@ -26,6 +26,13 @@ int main()
 
     std::cout << __DATE__ << " " << __TIME__ << std::endl << std::endl; // log date and time of compilation, not runtime
 
+    // demo of binary literals
+    demoBinair();
+	// demo of bitmask operations
+    demoBitmask();
+	// dem  o of hexadecimal literals
+    demoHexadecimal();
+
 	// Call assembly function to add two numbers    
     int a = FIRSTNUM, b = SECONDNUM;
 #if defined(_M_X64)
@@ -37,7 +44,6 @@ int main()
 #else
 #error Platform not supported
 #endif
-
 	// call C function to test CRC calculation
 	testcrc();  
     // call C++ function to test BitSwap
