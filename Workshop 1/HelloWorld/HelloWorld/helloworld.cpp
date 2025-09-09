@@ -27,10 +27,10 @@ int main()
 
     LOG_DEBUG;
 
-	int sum = globalAdd(5, 6);  // global function
-	sum = rekenen::add(5, 6);   // namespace function
-	Rekenen r;                  // class constructor
-	sum = r.add(5, 6);          // class method
+    int sum = globalAdd(5, 6);  // global function
+    sum = rekenen::add(5, 6);   // namespace function
+    Rekenen r;                  // class constructor
+    sum = r.add(5, 6);          // class method
 
     if (sum > 10) {
         std::cout << "Meer dan tien" << std::endl;

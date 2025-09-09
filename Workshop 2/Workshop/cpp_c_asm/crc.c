@@ -15,12 +15,12 @@ static void logBuffer(const unsigned char* buf, unsigned int length);
 void testcrc(void)
 {
     unsigned char* buffer;
-	buffer = (unsigned char*)malloc(BUFFER_SIZE + 1);// allocate memory for buffer
+    buffer = (unsigned char*)malloc(BUFFER_SIZE + 1);// allocate memory for buffer
     if (buffer == NULL)
     {
         printf("Memory allocation failed\n");
         return;
-	}
+    }
     else
     { 
         int crc;
@@ -29,13 +29,13 @@ void testcrc(void)
             buffer[i] = (unsigned char)(i & 0xFF); // fill buffer with some data
         };
         printf("%s input buffer:\n", __FUNCTION__);
-		logBuffer(buffer, BUFFER_SIZE);
+        logBuffer(buffer, BUFFER_SIZE);
 
         crc = crc32b(buffer, BUFFER_SIZE);
-		printf("CRC32 = 0x%08X\n", crc);
+        printf("CRC32 = 0x%08X\n", crc);
 
-		free(buffer);// free allocated memory
-		buffer = NULL; // Setting pointer NULL avoids dangling pointer issues.
+        free(buffer);// free allocated memory
+        buffer = NULL; // Setting pointer NULL avoids dangling pointer issues.
     }
 }
 

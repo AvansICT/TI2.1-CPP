@@ -28,12 +28,12 @@ int main()
 
     // demo of binary literals
     demoBinair();
-	// demo of bitmask operations
+    // demo of bitmask operations
     demoBitmask();
-	// dem  o of hexadecimal literals
+    // dem  o of hexadecimal literals
     demoHexadecimal();
 
-	// Call assembly function to add two numbers    
+    // Call assembly function to add two numbers    
     int a = FIRSTNUM, b = SECONDNUM;
 #if defined(_M_X64)
     int sum = addWithAsmX64(a, b);
@@ -44,9 +44,9 @@ int main()
 #else
 #error Platform not supported
 #endif
-	// call C function to test CRC calculation
-	testcrc();  
+    // call C function to test CRC calculation
+    testcrc();  
     // call C++ function to test BitSwap
     testSwap();
-	return 0;   
+    return 0;
 }

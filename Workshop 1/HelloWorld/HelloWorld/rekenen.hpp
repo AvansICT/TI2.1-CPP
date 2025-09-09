@@ -1,4 +1,4 @@
-#ifndef	_REKENEN_HPP_	
+#ifndef _REKENEN_HPP_   
 #define _REKENEN_HPP_
 
 namespace rekenen

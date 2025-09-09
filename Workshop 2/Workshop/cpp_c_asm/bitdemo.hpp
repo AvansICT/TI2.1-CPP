@@ -1,4 +1,4 @@
-#ifndef	_BITDEMO_HPP_	
+#ifndef _BITDEMO_HPP_
 #define _BITDEMO_HPP_
 
 void demoBinair(void);

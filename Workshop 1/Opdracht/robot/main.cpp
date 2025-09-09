@@ -10,10 +10,10 @@
 int main()
 {
     std::cout << "Robot!\n";
-	std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
+    std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
 
-	robot r;                  // todo
-		
+    robot r;                  // todo
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

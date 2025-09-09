@@ -13,7 +13,7 @@ void testSwap(void)
     int size = BUFFER_SIZE;
     int i;
     unsigned char* buffer = new unsigned char[size];   // allocate on heap
-	
+
     if (!buffer)
     {
         std::cout << "Memory allocation failed\n" << std::endl ;
@@ -23,17 +23,17 @@ void testSwap(void)
     {
         buffer[i] = i; // fill buffer with some data
     }
-	
-	std::cout << __FUNCTION__ << "buffer: before\n";
+
+    std::cout << __FUNCTION__ << "buffer: before\n";
     logBuffer(buffer, BUFFER_SIZE);
     for (i = 0; i < BUFFER_SIZE; i++)
     {
-	    buffer[i] = nibbleSwap(buffer[i]);
+        buffer[i] = nibbleSwap(buffer[i]);
     }
     std::cout << __FUNCTION__ << " buffer: after\n";
     logBuffer(buffer, BUFFER_SIZE);
-	delete[] buffer; // free allocated memory
-	buffer = nullptr;// Setting pointer nullptr avoids dangling pointer issues.
+    delete[] buffer; // free allocated memory
+    buffer = nullptr;// Setting pointer nullptr avoids dangling pointer issues.
 }
 
 static uint8_t nibbleSwap(uint8_t x) {
