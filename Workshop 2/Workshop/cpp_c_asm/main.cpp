@@ -45,7 +45,7 @@ int main()
 #error Platform not supported
 #endif
     // call C function to test CRC calculation
-    testcrc();  
+    testcrc();
     // call C++ function to test BitSwap
     testSwap();
     return 0;

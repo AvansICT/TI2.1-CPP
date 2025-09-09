@@ -14,6 +14,57 @@ using namespace avans;
 //#define STACKOVERFLOW_RECURSIVE
 //#define STACKOVERFLOW_STACKSIZE
 
+// Uitvoer kan verschillen per systeem
+void sizeofDemo(void) {
+
+    //Voorbeeld 1 – Basisgebruik
+    cout << "int: " << sizeof(int) << " bytes\n";
+    cout << "double: " << sizeof(double) << " bytes\n";
+    cout << "long: " << sizeof(long) << " bytes\n";
+    cout << "char: " << sizeof(char) << " bytes\n";
+
+    int x = 42;
+    cout << "variabele x: " << sizeof(x) << " bytes\n";
+    //Voorbeeld 2 – Arrays
+    int arr[10];
+    cout << sizeof(arr) << " bytes\n";             // meestal 40 (10 * 4)
+    cout << sizeof(arr) / sizeof(arr[0]) << endl; // aantal elementen = 10
+
+    struct Point {
+        int x;
+        int y;
+    };
+
+    cout << "sizeof(Point) = " << sizeof(Point) << " bytes\n";
+
+    struct A {
+        char c;   // 1 byte
+        int i;    // 4 bytes
+    };
+
+    cout << "sizeof(A) = " << sizeof(A) << endl;
+    std::cout << "offset c = " << offsetof(A, c) << "\n";
+    std::cout << "offset i  = " << offsetof(A, i) << "\n";
+
+    struct B {
+        int i;   // 4 bytes
+        char c;  // 1 byte
+    };
+    cout << "sizeof(B) = " << sizeof(B) << endl;
+    std::cout << "offset c = " << offsetof(B, c) << "\n";
+    std::cout << "offset i  = " << offsetof(B, i) << "\n";
+
+    struct C {
+        char c1;  // 1 byte
+        double d; // 8 bytes
+        char c2;  // 1 byte
+    };
+    cout << "sizeof(C) = " << sizeof(C) << endl;
+    std::cout << "offset c1 = " << offsetof(C, c1) << "\n";
+    std::cout << "offset d  = " << offsetof(C, d) << "\n";
+    std::cout << "offset c2 = " << offsetof(C, c2) << "\n";
+}
+
 void pointerDemo(void)
 {
     int a = 42;
@@ -76,7 +127,7 @@ int main()
 {
     std::cout << "Workshop 2!\n";
     std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
-
+    sizeofDemo();
     pointerDemo();
     staticArrayDemo();
 #if defined(STACKOVERFLOW_RECURSIVE)
