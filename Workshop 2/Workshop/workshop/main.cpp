@@ -22,17 +22,19 @@ void sizeofDemo(void) {
     cout << "double: " << sizeof(double) << " bytes\n";
     cout << "long: " << sizeof(long) << " bytes\n";
     cout << "char: " << sizeof(char) << " bytes\n";
+    cout << "void*: " << sizeof(void*) << " bytes\n";
 
     int x = 42;
     cout << "variabele x: " << sizeof(x) << " bytes\n";
     //Voorbeeld 2 – Arrays
     int arr[10];
     cout << sizeof(arr) << " bytes\n";             // meestal 40 (10 * 4)
-    cout << sizeof(arr) / sizeof(arr[0]) << endl; // aantal elementen = 10
+    cout << sizeof(arr) / sizeof(arr[0]) << endl;  // aantal elementen = 10
 
     struct Point {
         int x;
         int y;
+        void* p;  // depend on platform (x86 (32bit):4 or x64 (64bit):8 bytes)
     };
 
     cout << "sizeof(Point) = " << sizeof(Point) << " bytes\n";
@@ -40,17 +42,21 @@ void sizeofDemo(void) {
     struct A {
         char c;   // 1 byte
         int i;    // 4 bytes
+        void* p;  // depend on platform (x86 (32bit):4 or x64 (64bit):8 bytes)
     };
 
     cout << "sizeof(A) = " << sizeof(A) << endl;
     std::cout << "offset c = " << offsetof(A, c) << "\n";
     std::cout << "offset i  = " << offsetof(A, i) << "\n";
+    std::cout << "offset p  = " << offsetof(A, p) << "\n";
 
     struct B {
+        void* p; // depend on platform (x86 (32bit):4 or x64 (64bit):8 bytes)
         int i;   // 4 bytes
         char c;  // 1 byte
     };
     cout << "sizeof(B) = " << sizeof(B) << endl;
+    std::cout << "offset p  = " << offsetof(B, p) << "\n";
     std::cout << "offset c = " << offsetof(B, c) << "\n";
     std::cout << "offset i  = " << offsetof(B, i) << "\n";
 
