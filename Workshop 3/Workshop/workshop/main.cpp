@@ -130,32 +130,6 @@ void demo7(void) {
 	std::cout << "Geheime waarde: " << secret << std::endl;
 }
 
-union ByteBool {
-    unsigned char byte;
-    bool flag;
-};
-
-struct ByteWithFlag {
-    unsigned char value : 7;  // 7 bits voor een getal (0–127)
-    bool flag : 1;            // 1 bit voor een boolean
-};
-// union / bitfields
-void demoX(void) {
-    // union
-    ByteBool test;
-    test.byte = 255;
-    std::cout << "byte: " << (int)test.byte << " bool: " << test.flag << std::endl;
-    test.flag = false;
-    std::cout << "byte: " << (int)test.byte << " bool: " << test.flag << std::endl;
- 
-    ByteWithFlag b{ 42, true };   // 42 + flag = true
-    cout << "Value: " << (int)b.value << ", Flag: " << b.flag << endl;
-
-    b.value = 100;
-    b.flag = false;
-    cout << "Value: " << (int)b.value << ", Flag: " << b.flag << endl;
-}
-
 int main()
 {
     std::cout << "Workshop 3!\n";
@@ -168,6 +142,5 @@ int main()
     demo5();
     demo6();
 	demo7();
-    demoX();
     return 0;
 }
