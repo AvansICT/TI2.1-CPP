@@ -2,8 +2,8 @@
 //
 
 #include <iostream>
-#include "robot.hpp"
 #include "log.hpp"
+#include "robot.hpp"
 
 struct data {
     int i;
@@ -47,13 +47,13 @@ void demo2(void) {
     int a = 1;
     int* ptr = &a;
     changeCallByValue(a);       // Call by Value
-    cout << a << endl;          // output: 1
+    std::cout << a << std::endl;          // output: 1
     changeCallByReference(a);   // Call by Reference (voorkeur)
-    cout << a << endl;          // output: 3
+    std::cout << a << std::endl;          // output: 3
     changeCallByValuePtr(&a);   // Pointer doorgeven (Call by Value met pointer)
-    cout << a << endl;          // output: 4
+    std::cout << a << std::endl;          // output: 4
     changePointer(ptr);         // Pointer by Reference (Call by Reference met pointer)
-    cout << *ptr << endl;       // output: 123
+    std::cout << *ptr << std::endl;       // output: 123
 }
 
 void renameCallByValue(Robot r) {
@@ -86,6 +86,50 @@ void demo3(void) {
     cout << ptr->name << endl;  // Output: Delta
 }
 
+void counter(void) {
+    static int count = 0;  // wordt slechts één keer geïnitialiseerd
+    count++;
+    cout << "Count = " << count << endl;
+}
+
+void demo4(void) {
+    counter();  // Count = 1
+    counter();  // Count = 2
+    counter();  // Count = 3
+}
+
+
+class RobotDemo {
+public:
+    static int robotCount;  // telt alle robots
+    RobotDemo() { robotCount++; }
+    static void greet() {
+        cout << "Hello from Robot class!" << endl;
+    }
+};
+
+int RobotDemo::robotCount = 0;  // definitie van static member
+
+void demo5(void) {
+    RobotDemo r1, r2, r3;
+    std::cout << "Aantal robots: " << RobotDemo::robotCount << std::endl; // 3
+}
+
+void demo6(void) {
+    RobotDemo::greet();  // kan zonder object
+}
+
+static int secret = 42;  // enkel zichtbaar in dit bestand
+
+static void secretFunc(void) {
+    std::cout << "Dit is geheime functie!" << std::endl;
+}
+
+void demo7(void) {
+    secretFunc();
+	std::cout << "Geheime waarde: " << secret << std::endl;
+}
+
 union ByteBool {
     unsigned char byte;
     bool flag;
@@ -96,7 +140,7 @@ struct ByteWithFlag {
     bool flag : 1;            // 1 bit voor een boolean
 };
 // union / bitfields
-void demo4(void) {
+void demoX(void) {
     // union
     ByteBool test;
     test.byte = 255;
@@ -119,6 +163,11 @@ int main()
     demo1();
     demo2();
     demo3();
+    // static demo
     demo4();
+    demo5();
+    demo6();
+	demo7();
+    demoX();
     return 0;
 }
