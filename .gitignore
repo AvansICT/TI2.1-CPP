@@ -1,7 +1,76 @@
 ## Ignore Visual Studio temporary files, build results
-
 *.ipch
 *.user
+
+/voorbeelden/.vs
+/voorbeelden/Debug
+/voorbeelden/Release
+/voorbeelden/x64
+/voorbeelden/BankAccount/.vs
+/voorbeelden/BankAccount/Debug
+/voorbeelden/BankAccount/Release
+/voorbeelden/BankAccount/x64
+/voorbeelden/HelloArrays/.vs
+/voorbeelden/HelloArrays/Debug
+/voorbeelden/HelloArrays/Release
+/voorbeelden/HelloArrays/x64
+/voorbeelden/HelloCppArray/.vs
+/voorbeelden/HelloCppArray/Debug
+/voorbeelden/HelloCppArray/Release
+/voorbeelden/HelloCppArray/x64
+/voorbeelden/HelloEndl/.vs
+/voorbeelden/HelloEndl/Debug
+/voorbeelden/HelloEndl/Release
+/voorbeelden/HelloEndl/x64
+/voorbeelden/HelloFileIO/.vs
+/voorbeelden/HelloFileIO/Debug
+/voorbeelden/HelloFileIO/Release
+/voorbeelden/HelloFileIO/x64
+/voorbeelden/HelloManipulator/.vs
+/voorbeelden/HelloManipulator/Debug
+/voorbeelden/HelloManipulator/Release
+/voorbeelden/HelloManipulator/x64
+/voorbeelden/HelloMethods/.vs
+/voorbeelden/HelloMethods/Debug
+/voorbeelden/HelloMethods/Release
+/voorbeelden/HelloMethods/x64
+/voorbeelden/HelloReplaceString/.vs
+/voorbeelden/HelloReplaceString/Debug
+/voorbeelden/HelloReplaceString/Release
+/voorbeelden/HelloReplaceString/x64
+/voorbeelden/HelloStrings/.vs
+/voorbeelden/HelloStrings/Debug
+/voorbeelden/HelloStrings/Release
+/voorbeelden/HelloStrings/x64
+/voorbeelden/HelloStringStream/.vs
+/voorbeelden/HelloStringStream/Debug
+/voorbeelden/HelloStringStream/Release
+/voorbeelden/HelloStringStream/x64
+/voorbeelden/HelloVector/.vs
+/voorbeelden/HelloVector/Debug
+/voorbeelden/HelloVector/Release
+/voorbeelden/HelloVector/x64
+/voorbeelden/HelloWorld/.vs
+/voorbeelden/HelloWorld/Debug
+/voorbeelden/HelloWorld/Release
+/voorbeelden/HelloWorld/x64
+/voorbeelden/Iterator/.vs
+/voorbeelden/Iterator/Debug
+/voorbeelden/Iterator/Release
+/voorbeelden/Iterator/x64
+/voorbeelden/StudentDate/.vs
+/voorbeelden/StudentDate/Debug
+/voorbeelden/StudentDate/Release
+/voorbeelden/StudentDate/x64
+/voorbeelden/Tuple/.vs
+/voorbeelden/Tuple/Debug
+/voorbeelden/Tuple/Release
+/voorbeelden/Tuple/x64
+/voorbeelden/Union/.vs
+/voorbeelden/Union/Debug
+/voorbeelden/Union/Release
+/voorbeelden/Union/x64
+
 /Workshop 1/Helloworld/.vs
 /Workshop 1/Helloworld/Debug
 /Workshop 1/Helloworld/Release
@@ -19,6 +88,7 @@
 /Workshop 1/Opdracht/robot/x64
 /Workshop 1/Opdracht/robot/Debug
 /Workshop 1/Opdracht/robot/Release
+
 /Workshop 2/Workshop/.vs
 /Workshop 2/Workshop/Debug
 /Workshop 2/Workshop/Release
@@ -54,6 +124,7 @@
 /Workshop 2/Workshop/groep8/Debug
 /Workshop 2/Workshop/groep8/Release
 /Workshop 2/Opdracht/.vs
+
 /Workshop 3/Workshop/.vs
 /Workshop 3/Workshop/Debug
 /Workshop 3/Workshop/Release
