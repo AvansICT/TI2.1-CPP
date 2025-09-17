@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tuple", "Tuple\Tuple.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Friends", "Union\Union.vcxproj", "{F6B75E73-687B-4AB3-93C0-13AE1DF94A9F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloPointer", "HelloPointer\HelloPointer.vcxproj", "{A4032210-9856-4719-BF0C-79D2F81C6B40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -171,6 +173,14 @@ Global
 		{F6B75E73-687B-4AB3-93C0-13AE1DF94A9F}.Release|x64.Build.0 = Release|x64
 		{F6B75E73-687B-4AB3-93C0-13AE1DF94A9F}.Release|x86.ActiveCfg = Release|Win32
 		{F6B75E73-687B-4AB3-93C0-13AE1DF94A9F}.Release|x86.Build.0 = Release|Win32
+		{A4032210-9856-4719-BF0C-79D2F81C6B40}.Debug|x64.ActiveCfg = Debug|x64
+		{A4032210-9856-4719-BF0C-79D2F81C6B40}.Debug|x64.Build.0 = Debug|x64
+		{A4032210-9856-4719-BF0C-79D2F81C6B40}.Debug|x86.ActiveCfg = Debug|Win32
+		{A4032210-9856-4719-BF0C-79D2F81C6B40}.Debug|x86.Build.0 = Debug|Win32
+		{A4032210-9856-4719-BF0C-79D2F81C6B40}.Release|x64.ActiveCfg = Release|x64
+		{A4032210-9856-4719-BF0C-79D2F81C6B40}.Release|x64.Build.0 = Release|x64
+		{A4032210-9856-4719-BF0C-79D2F81C6B40}.Release|x86.ActiveCfg = Release|Win32
+		{A4032210-9856-4719-BF0C-79D2F81C6B40}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
