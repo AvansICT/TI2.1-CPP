@@ -24,9 +24,9 @@ int main() {
 	const size_t n_students = 10;
 	std::unique_ptr<std::string[]> students(new std::string[n_students]);
 	students[0] = "Johan";
-	students[1] = "Etienne";
-	students[2] = "Maurice";
-	students[3] = "Diederich";
+	students[1] = "Marcel";
+	students[2] = "Frido";
+	students[3] = "Hans";
 
 	std::cout << "The address of students is " << students << '\n';
 	std::cout << "The address first students is " << &students[0] << '\n';
