@@ -1,5 +1,6 @@
 #pragma once 
-
+// Disable warning messages 4661
+#pragma warning(disable : 4661)
 #include <string>
 
 template <class T>

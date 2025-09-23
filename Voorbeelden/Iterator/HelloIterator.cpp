@@ -2,7 +2,8 @@
 #include <string>
 #include <iostream>
 */
-
+// Disable warning messages 5050 5310
+#pragma warning(disable : 5050 5310)
 import std.core;
 
 using namespace std::string_literals;
