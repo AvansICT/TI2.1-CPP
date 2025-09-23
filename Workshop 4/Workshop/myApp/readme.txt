@@ -26,14 +26,15 @@ cd TI2.1-CPP-main/Workshop\ 4/Workshop/myApp/
 mkdir build
 cd build
 
-9. Make sure gcc is used as compiler
-export CXX=/usr/bin/gcc
+9. Make sure g++ is used as C++ compiler
+   (note: for c files use the gcc compiler must be used)
+export CXX=/usr/bin/g++
 
-9. Run cmake
+11. Run cmake
 cmake ..
 
-10. Run make
+12. Run make
 make
 
-11. Run the program
+13. Run the program
 ./myApp
