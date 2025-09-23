@@ -28,7 +28,7 @@ void LogCompiler()
 #if defined(__clang__)
 	std::cout << "Compiled with Clang version: " << __clang_version__ << std::endl;
 #elif defined(__GNUC__) || defined(__GNUG__)
-	std::cout << "Compiled with GCC version: " << __VERSION__ << "(" __GNUC__ << "." << __GNUC_MINOR__ << "." << __GNUC_PATCHLEVEL__ << ")" << std::endl;
+	std::cout << "Compiled with GCC version: " << __VERSION__ << " (" << __GNUC__ << "." << __GNUC_MINOR__ << "." << __GNUC_PATCHLEVEL__ << ")" << std::endl;
 #elif defined(_MSC_FULL_VER)
 	std::cout << "Compiled with MSVC version: " << _MSC_FULL_VER << std::endl;
 #else
@@ -38,9 +38,10 @@ void LogCompiler()
 
 int main()
 {
-    std::cout << "Workshop 4!\n";
-    std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
+	std::cout << "myApp!\n";
+	std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
 	LogOperatingSystem();
 	LogCompiler();
-    return 0;
+	LOG_DEBUG
+	return 0;
 }

@@ -231,9 +231,9 @@
 /Workshop 4/Workshop/Debug
 /Workshop 4/Workshop/Release
 /Workshop 4/Workshop/x64
-/Workshop 4/Workshop/crossplatform/x64
-/Workshop 4/Workshop/crossplatform/Debug
-/Workshop 4/Workshop/crossplatform/Release
+/Workshop 4/Workshop/myApp/x64
+/Workshop 4/Workshop/myApp/Debug
+/Workshop 4/Workshop/myApp/Release
 /Workshop 4/Workshop/workshop/x64
 /Workshop 4/Workshop/workshop/Debug
 /Workshop 4/Workshop/workshop/Release

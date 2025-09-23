@@ -21,7 +21,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "groep6", "groep6\groep6.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "groep8", "groep8\groep8.vcxproj", "{880D1A78-CD37-4025-A1BF-E0EE0E2F35ED}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crossplatform", "crossplatform\crossplatform.vcxproj", "{1CB011C4-7808-4FD1-B3D0-7E1CD4F9B52D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "myApp", "myApp\myApp.vcxproj", "{1CB011C4-7808-4FD1-B3D0-7E1CD4F9B52D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

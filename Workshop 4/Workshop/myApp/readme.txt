@@ -1,4 +1,4 @@
-Linux build steps
+Linux build steps for myApp
 
 1. Open terminal
 
@@ -17,10 +17,10 @@ sudo apt install unzip
 wget https://github.com/AvansICT/TI2.1-CPP/archive/refs/heads/main.zip
 
 6. Unzip the file
-unzip TI2.1-CPP-main.zip
+unzip main.zip
 
 7. navigate to the unzipped folder
-cd /TI2.1-CPP-main/Workshop\ 4/Workshop/crossplatform/
+cd TI2.1-CPP-main/Workshop\ 4/Workshop/crossplatform/
 
 8. Create a build folder and navigate to it
 mkdir build
