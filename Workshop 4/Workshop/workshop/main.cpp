@@ -69,6 +69,80 @@ static void demonstratePolymorphism(void) {
     delete obj1,obj2;
 }
 
+static void demonstrateLambda(void) {
+	auto add = [](int a, int b) { return a + b; };
+	std::cout << "Lambda add(2, 3): " << add(2, 3) << std::endl;
+}
+
+// Classic Function pointer example
+typedef int(*myFunctionpoiter)(int, int);
+
+// Prototype
+int addClassicFPInt(int x, int y);
+int addIntWithClassicFP(int x, int y, myFunctionpoiter fp); //Vervangt: int addIntWithFP(int x, int y, int(*fp)(int, int));
+
+void demonstrateClassicFP() {
+    std::cout << "resultaat: " << addIntWithClassicFP(1, 2, addClassicFPInt) << std::endl;
+}
+
+int addClassicFPInt(int x, int y) {
+    return x + y;
+}
+
+int addIntWithClassicFP(int x, int y, myFunctionpoiter fp) {
+    return fp(x, y);
+}
+
+#include <functional> // voor std::function
+// Prototype
+int addInt(int x, int y);
+int addIntWithFP(int x, int y, std::function<int(int, int)> func);
+
+int demonstrateStdFunctionFP() {
+    std::cout << "Resultaat: " << addIntWithFP(1, 2, addInt) << std::endl;
+
+    // Bonus: ook een lambda kan erin
+    std::cout << "Resultaat lambda: "
+        << addIntWithFP(3, 4, [](int a, int b) { return a * b; })
+        << std::endl;
+
+    return 0;
+}
+
+int addInt(int x, int y) {
+    return x + y;
+}
+
+int addIntWithFP(int x, int y, std::function<int(int, int)> func) {
+    return func(x, y);
+}
+
+
+// Een functor-klasse die optelt
+struct Add {
+    int operator()(int a, int b) const {
+        return a + b;
+    }
+};
+
+// Een functor-klasse die vermenigvuldigt
+struct Multiply {
+    int operator()(int a, int b) const {
+        return a * b;
+    }
+};
+
+void demonstrateStdFunctionFunctor() {
+    // std::function kan ook functors opslaan
+    std::function<int(int, int)> func;
+
+    func = Add(); // gebruik de Add functor
+    std::cout << "5 + 3 = " << func(5, 3) << std::endl;
+
+    func = Multiply(); // gebruik de Multiply functor
+    std::cout << "5 * 3 = " << func(5, 3) << std::endl;
+}
+
 int main()
 {
     std::cout << "Workshop 4!\n";
@@ -76,5 +150,8 @@ int main()
     demonstrateInheritance();
     demonstrateMultipleInheritance();
     demonstratePolymorphism();
+    demonstrateLambda();
+    demonstrateClassicFP();
+    demonstrateStdFunctionFP();
     return 0;
 }
