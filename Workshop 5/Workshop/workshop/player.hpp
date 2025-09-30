@@ -16,6 +16,7 @@ public:
     void showInventory() const;
     bool hasItem(const std::string& item) const;
     void pickUp(const std::string& item);
+    void showAsciiArt(void);
 };
 
 #endif // PLAYER_HPP

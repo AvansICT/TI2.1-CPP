@@ -7,7 +7,40 @@
 #include "room.hpp"
 #include "player.hpp"
 
+
+// --- SCORE FUNCTIES ---
+typedef struct _scoreInfo
+{
+    unsigned int points;
+    uint8_t   playerNo;
+    std::string name;
+}ScoreInfo;
+
+static ScoreInfo scoreInfo = { 0, 1, "Player One have Fun" };
+
+// Score bijwerken en tonen in console
+void updateScoreConsole(int points) {
+    scoreInfo.points += points;
+    std::cout << "[Score] " << scoreInfo.points << "\n";
+}
+
+// Score bijwerken maar niet tonen (stil)
+void updateScoreSilent(int points) {
+    scoreInfo.points += points;
+}
+
+
 int main() {
+    // Functiepointer kiezen: of console log, of stil
+    void (*updateScore)(int);
+    bool debugMode = true; // zet op false om score stil bij te houden
+    if (debugMode) {
+        updateScore = &updateScoreConsole;
+    }
+    else {
+        updateScore = &updateScoreSilent;
+    }
+
     // Kamers maken
     auto lobby = std::make_shared<Room>("Lobby", "Centrale hal van het ziekenhuis.");
     auto apotheek = std::make_shared<Room>("Apotheek", "Hier liggen medicijnen in gekoelde kasten.");
@@ -65,6 +98,7 @@ int main() {
         else if (command == "pak") {
             std::cin >> arg;
             robot.pickUp(arg);
+            updateScore(5); // punten voor item oppakken
         }
         else if (command == "inventaris") {
             robot.showInventory();
@@ -75,9 +109,11 @@ int main() {
                 if (arg == "MedicatieA" && robot.hasItem("MedicatieA")) {
                     std::cout << "Patient op de IC heeft de juiste medicatie gekregen. Goed gedaan!\n";
                     medicatieA_gegeven = true;
+                    updateScore(20);
                 }
                 else if (arg == "MedicatieB" && robot.hasItem("MedicatieB")) {
                     std::cout << "FOUT! Verkeerde medicatie aan IC-patient. Game Over.\n";
+                    updateScore(-50);
                     break;
                 }
                 else {
@@ -88,6 +124,8 @@ int main() {
                 if (arg == "MedicatieB" && robot.hasItem("MedicatieB") && medicatieA_gegeven) {
                     std::cout << "Chirurgen hebben de juiste medicatie ontvangen.\n";
                     std::cout << "MISSIE GESLAAGD! Alle patienten zijn geholpen.\n";
+                    robot.showAsciiArt();
+                    updateScore(50);
                     break;
                 }
                 else if (arg == "MedicatieB" && robot.hasItem("MedicatieB") && !medicatieA_gegeven) {
@@ -109,6 +147,6 @@ int main() {
             std::cout << "Onbekend commando.\n";
         }
     }
-
+    std::cout << "\nEindscore: " << scoreInfo.points << "\n";
     return 0;
 }

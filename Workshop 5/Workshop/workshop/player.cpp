@@ -27,3 +27,16 @@ void Player::pickUp(const std::string& item) {
         std::cout << "Geen " << item << " hier.\n";
     }
 }
+
+void Player::showAsciiArt() {
+    std::cout << R"(
+
+         [Robot Zorgassistent]
+             .-"""-.
+            / .===. \
+            \/ 6 6 \/
+            (  \_/  )
+         ___ooo__V__ooo___
+
+        )" << "\n";
+}
