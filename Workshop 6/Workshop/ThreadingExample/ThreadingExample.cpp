@@ -60,7 +60,7 @@ int main() {
 
 	//Launch a group of threads
 	for (int i = 0; i < num_threads; ++i) {
-		t[i] = std::thread(call_from_thread, i, LockType::None);
+		t[i] = std::thread(call_from_thread, i, LockType::None);//LockType::Mutex
 		std::this_thread::sleep_for(us(50));
 	}
 
