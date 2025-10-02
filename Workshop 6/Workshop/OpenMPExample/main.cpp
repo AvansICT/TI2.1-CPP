@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 #include "omp.h"
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include <random>
+#include "clocktimer.hpp"
 
 using namespace std;
+
+//#define LOG_NUMBERS
 
 void selectionSortParallel(vector<int>& A);
 void selectionSortSerial(vector<int>& A);
@@ -19,7 +20,7 @@ int main() {
 	std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
 
 	int number;
-	clock_t t;
+	clocktimer t1;
 
 	cout << "Enter number of items to sort: " << endl;
 	cin >> number;
@@ -31,35 +32,39 @@ int main() {
 	generate(v.begin(), v.end(), []() { return range(randomizer); });
 
 	// Parallel
-	t = clock();
+	t1.startTimer();
 	selectionSortParallel(v);
-	t = clock() - t;
-	double cpu_time_used_parallel = ((double)t) / CLOCKS_PER_SEC;
+	t1.stopTimer();
+	double cpu_time_used_parallel = t1.elapsedTime();
 
 	// Serial
 	vector<int> v2(v);
-	t = clock();
+	t1.startTimer();
 	selectionSortSerial(v2);
-	t = clock() - t;
-	double cpu_time_used_serial = ((double)t) / CLOCKS_PER_SEC;
+	t1.stopTimer();
+	double cpu_time_used_serial = t1.elapsedTime();
 
 	// Verify if the algorithm works as advised
 	verify(v);
 	verify(v2);
 
 	cout << "Time taken for sort parallel: " << cpu_time_used_parallel << " vs serial: " << cpu_time_used_serial << endl;
-	/*cout << "Output serial: " << endl;
-	for (int iter = 0; iter<number; iter++) {
-	cout << v2[iter] << " ";
+	std::cout << "Output serial: " << std::endl;
+#ifdef LOG_NUMBERS
+	// log with foreach and lambda
+	int idx = 0;
+	std::for_each(v2.begin(), v2.end(), [&](long long val) {
+		std::cout << "[" << idx++ << "]=" << val << " ";
+		});
+	cout << endl;
+	cout << "Output Parallel: " << endl;
+	// range - based for with index
+	idx = 0;
+	for (const auto& val : v) {
+		std::cout << "[" << idx++ << "]=" << val << " ";
 	}
 	cout << endl;
-
-	cout << "Output Parallel: " << endl;
-	for (int iter = 0; iter<number; iter++) {
-	cout << v[iter] << " ";
-	}
-	cout << endl;*/
-
+#endif
 #if defined(_DEBUG) && defined(_MSC_FULL_VER)
 	__debugbreak(); // hardcoded breakpoint for debug build only
 #endif
