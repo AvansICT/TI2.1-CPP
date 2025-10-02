@@ -45,6 +45,8 @@ int main() {
 
 	//Printing the combined Data
 	std::cout << "Data = " << data << std::endl;
-
+#if defined(_DEBUG) && defined(_MSC_FULL_VER)
+	__debugbreak(); // hardcoded breakpoint for debug build only
+#endif
 	return 0;
 }

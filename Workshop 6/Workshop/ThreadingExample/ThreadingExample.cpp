@@ -73,6 +73,8 @@ int main() {
 	for (int i = 0; i < num_threads; ++i) {
 		t[i].join();
 	}
-
+#if defined(_DEBUG) && defined(_MSC_FULL_VER)
+	__debugbreak(); // hardcoded breakpoint for debug build only
+#endif
 	return 0;
 }

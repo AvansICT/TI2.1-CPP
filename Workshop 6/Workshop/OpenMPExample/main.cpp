@@ -19,7 +19,7 @@ int main() {
 	std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
 
 	int number;
-	clock_t t, end;
+	clock_t t;
 
 	cout << "Enter number of items to sort: " << endl;
 	cin >> number;
@@ -60,8 +60,9 @@ int main() {
 	}
 	cout << endl;*/
 
-	int x;
-	std::cin >> x;
+#if defined(_DEBUG) && defined(_MSC_FULL_VER)
+	__debugbreak(); // hardcoded breakpoint for debug build only
+#endif
 
 	return 0;
 }
