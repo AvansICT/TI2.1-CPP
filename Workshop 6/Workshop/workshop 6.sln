@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "groep6", "groep6\groep6.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "groep8", "groep8\groep8.vcxproj", "{880D1A78-CD37-4025-A1BF-E0EE0E2F35ED}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloThreads", "HelloThreads\HelloThreads.vcxproj", "{E69AE240-DE78-47FC-BCED-4364CE05B50E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{880D1A78-CD37-4025-A1BF-E0EE0E2F35ED}.Release|x64.Build.0 = Release|x64
 		{880D1A78-CD37-4025-A1BF-E0EE0E2F35ED}.Release|x86.ActiveCfg = Release|Win32
 		{880D1A78-CD37-4025-A1BF-E0EE0E2F35ED}.Release|x86.Build.0 = Release|Win32
+		{E69AE240-DE78-47FC-BCED-4364CE05B50E}.Debug|x64.ActiveCfg = Debug|x64
+		{E69AE240-DE78-47FC-BCED-4364CE05B50E}.Debug|x64.Build.0 = Debug|x64
+		{E69AE240-DE78-47FC-BCED-4364CE05B50E}.Debug|x86.ActiveCfg = Debug|Win32
+		{E69AE240-DE78-47FC-BCED-4364CE05B50E}.Debug|x86.Build.0 = Debug|Win32
+		{E69AE240-DE78-47FC-BCED-4364CE05B50E}.Release|x64.ActiveCfg = Release|x64
+		{E69AE240-DE78-47FC-BCED-4364CE05B50E}.Release|x64.Build.0 = Release|x64
+		{E69AE240-DE78-47FC-BCED-4364CE05B50E}.Release|x86.ActiveCfg = Release|Win32
+		{E69AE240-DE78-47FC-BCED-4364CE05B50E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
