@@ -1,9 +1,9 @@
 // Example from: https://web.archive.org/web/20190228003127/https://thispointer.com/c11-multithreading-part-9-stdasync-tutorial-example/
 #include <string>
-#include <iostream>
 #include <chrono>
 #include <thread>
-
+#include <future>
+#include <iostream>
 
 std::string fetchDataFromDB(const std::string& recvdData) {
 	// Make sure that function takes 5 seconds to complete
@@ -22,17 +22,19 @@ std::string fetchDataFromFile(const std::string& recvdData) {
 }
 
 int main() {
-	std::cout << "HelloNoAsync\n";
+	std::cout << "AsyncExample!\n";
 	std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
-
 	// Get Start Time
 	auto start = std::chrono::system_clock::now();
 
-	//Fetch Data from DB
-	std::string dbData = fetchDataFromDB("Data");
+	auto resultFromDB = std::async(std::launch::async, fetchDataFromDB, "Data");
 
 	//Fetch Data from File
 	std::string fileData = fetchDataFromFile("Data");
+
+	//Fetch Data from DB
+	// Will block till data is available in future<std::string> object.
+	std::string dbData = resultFromDB.get();
 
 	// Get End Time
 	auto end = std::chrono::system_clock::now();
