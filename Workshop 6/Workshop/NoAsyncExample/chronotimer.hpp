@@ -4,11 +4,15 @@
 #include <chrono>
 #include "timerbase.hpp"
 
-//portable, C++11+	std::chrono::system_clock or steady_clock
+//portable, C++11+	std::chrono::high_resolution_clock or steady_clock
 class ChronoTimer :public TimerBase {
 private:
-    std::chrono::time_point<std::chrono::system_clock> _start;
-    std::chrono::time_point<std::chrono::system_clock> _stop;
+    // Precision: Higher - uses std::chrono::high_resolution_clock
+    std::chrono::high_resolution_clock::time_point _start;
+    std::chrono::high_resolution_clock::time_point _stop;
+    // Precision: Lower - uses std::chrono::system_clock
+    std::chrono::time_point<std::chrono::system_clock> _startSysClk;
+    std::chrono::time_point<std::chrono::system_clock> _stopSysClk;
 public:
     ChronoTimer(void);                                      // Constructor
     ~ChronoTimer(void);                                     // Rule of Three/Five : 1.Destructor
@@ -20,6 +24,10 @@ public:
     void startTimer(void);
     void stopTimer(void);
     double elapsedTime(void) const;
+
+    void startTimerSystemClock(void);
+    void stopTimerSystemClock(void);
+    double elapsedTimeSystemClock(void) const;
 };
 
 #endif

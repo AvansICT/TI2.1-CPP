@@ -28,7 +28,7 @@ int main() {
 
 	// Get Start Time
 	ChronoTimer t1;
-	t1.startTimer();
+	t1.startTimerSystemClock();
 
 	auto resultFromDB = std::async(std::launch::async, fetchDataFromDB, "Data");
 
@@ -40,9 +40,9 @@ int main() {
 	std::string dbData = resultFromDB.get();
 
 	// Get End Time
-	t1.stopTimer();
+	t1.stopTimerSystemClock();
 
-	std::cout << "Total Time Taken = " << t1.elapsedTime() << " Seconds" << std::endl;
+	std::cout << "Total Time Taken = " << t1.elapsedTimeSystemClock() << " Seconds" << std::endl;
 
 	//Combine The Data
 	std::string data = dbData + " :: " + fileData;
