@@ -133,9 +133,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="chronotimer.cpp" />
+    <ClCompile Include="windowstimer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="timerbase.hpp" />
     <ClInclude Include="log.hpp" />
+    <ClInclude Include="chronotimer.hpp" />
+    <ClInclude Include="windowstimer.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -132,10 +132,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="chronotimer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="omptimer.cpp" />
+    <ClCompile Include="windowstimer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="chronotimer.hpp" />
     <ClInclude Include="log.hpp" />
+    <ClInclude Include="omptimer.hpp" />
+    <ClInclude Include="timerbase.hpp" />
+    <ClInclude Include="windowstimer.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
