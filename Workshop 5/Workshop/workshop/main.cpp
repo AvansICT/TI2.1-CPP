@@ -31,6 +31,8 @@ void updateScoreSilent(int points) {
 
 
 int main() {
+    std::cout << "Workshop 5!\n";
+    std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
     // Functiepointer kiezen: of console log, of stil
     void (*updateScore)(int);
     bool debugMode = true; // zet op false om score stil bij te houden
