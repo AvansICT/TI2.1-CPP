@@ -1,9 +1,10 @@
 // Example from: https://web.archive.org/web/20190228003127/https://thispointer.com/c11-multithreading-part-9-stdasync-tutorial-example/
 #include <string>
+#include <iostream>
 #include <chrono>
 #include <thread>
 #include <future>
-#include <iostream>
+#include "chronotimer.hpp"
 
 std::string fetchDataFromDB(const std::string& recvdData) {
 	// Make sure that function takes 5 seconds to complete
@@ -24,8 +25,10 @@ std::string fetchDataFromFile(const std::string& recvdData) {
 int main() {
 	std::cout << "AsyncExample!\n";
 	std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
+
 	// Get Start Time
-	auto start = std::chrono::system_clock::now();
+	ChronoTimer t1;
+	t1.startTimer();
 
 	auto resultFromDB = std::async(std::launch::async, fetchDataFromDB, "Data");
 
@@ -37,10 +40,9 @@ int main() {
 	std::string dbData = resultFromDB.get();
 
 	// Get End Time
-	auto end = std::chrono::system_clock::now();
+	t1.stopTimer();
 
-	auto diff = std::chrono::duration_cast <std::chrono::seconds> (end - start).count();
-	std::cout << "Total Time Taken = " << diff << " Seconds" << std::endl;
+	std::cout << "Total Time Taken = " << t1.elapsedTime() << " Seconds" << std::endl;
 
 	//Combine The Data
 	std::string data = dbData + " :: " + fileData;
