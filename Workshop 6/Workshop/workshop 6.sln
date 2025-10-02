@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloThreads", "HelloThread
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThreadingExample", "ThreadingExample\ThreadingExample.vcxproj", "{7ADC80B2-13AD-4611-814C-B1463E2683A0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloAsync", "HelloAsync\HelloAsync.vcxproj", "{BF031FD9-277E-43BE-9CD1-EF2389C7EA71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{7ADC80B2-13AD-4611-814C-B1463E2683A0}.Release|x64.Build.0 = Release|x64
 		{7ADC80B2-13AD-4611-814C-B1463E2683A0}.Release|x86.ActiveCfg = Release|Win32
 		{7ADC80B2-13AD-4611-814C-B1463E2683A0}.Release|x86.Build.0 = Release|Win32
+		{BF031FD9-277E-43BE-9CD1-EF2389C7EA71}.Debug|x64.ActiveCfg = Debug|x64
+		{BF031FD9-277E-43BE-9CD1-EF2389C7EA71}.Debug|x64.Build.0 = Debug|x64
+		{BF031FD9-277E-43BE-9CD1-EF2389C7EA71}.Debug|x86.ActiveCfg = Debug|Win32
+		{BF031FD9-277E-43BE-9CD1-EF2389C7EA71}.Debug|x86.Build.0 = Debug|Win32
+		{BF031FD9-277E-43BE-9CD1-EF2389C7EA71}.Release|x64.ActiveCfg = Release|x64
+		{BF031FD9-277E-43BE-9CD1-EF2389C7EA71}.Release|x64.Build.0 = Release|x64
+		{BF031FD9-277E-43BE-9CD1-EF2389C7EA71}.Release|x86.ActiveCfg = Release|Win32
+		{BF031FD9-277E-43BE-9CD1-EF2389C7EA71}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
