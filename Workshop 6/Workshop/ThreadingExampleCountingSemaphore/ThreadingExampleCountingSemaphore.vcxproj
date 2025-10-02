@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7ADC80B2-13AD-4611-814C-B1463E2683A0}</ProjectGuid>
+    <ProjectGuid>{C59F3A9B-AABB-424B-965C-37FA0C80E1F7}</ProjectGuid>
     <RootNamespace>HelloWorld</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>ThreadingExample</ProjectName>
+    <ProjectName>ThreadingExampleCountingSemaphore</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -132,11 +132,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ThreadingExample.cpp" />
+    <ClInclude Include="log.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="log.hpp" />
-    <ClInclude Include="semaphore.h" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

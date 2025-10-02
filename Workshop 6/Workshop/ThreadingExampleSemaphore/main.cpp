@@ -1,7 +1,7 @@
 #include <iostream>
 #include <thread>
 #include <mutex>
-#include "Semaphore.h"
+#include "semaphore.h"
 #include <sstream>
 #include <future>
 #include <chrono>
