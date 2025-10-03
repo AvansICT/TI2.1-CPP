@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{94a11b46-5578-428d-aa38-8d97406f91dd}</ProjectGuid>
+    <ProjectGuid>{3E28522E-7630-473C-81C1-BE7200BAA3D7}</ProjectGuid>
     <RootNamespace>HelloWorld</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -127,10 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Lib\chronotimer.cpp" />
+    <ClCompile Include="..\Lib\omptimer.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Lib\chronotimer.hpp" />
     <ClInclude Include="..\Lib\log.hpp" />
+    <ClInclude Include="..\Lib\omptimer.hpp" />
+    <ClInclude Include="..\Lib\timerbase.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
