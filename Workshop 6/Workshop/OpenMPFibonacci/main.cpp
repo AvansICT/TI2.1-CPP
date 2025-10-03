@@ -1,5 +1,5 @@
-#include "omptimer.hpp"
-#include "windowstimer.hpp"
+#include "..\lib\omptimer.hpp"
+#include "..\lib\windowstimer.hpp"
 #include <vector>
 #include <iostream>
 #include<algorithm>

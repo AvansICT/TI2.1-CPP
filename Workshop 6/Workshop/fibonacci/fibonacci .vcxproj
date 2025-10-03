@@ -132,15 +132,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Lib\chronotimer.cpp" />
+    <ClCompile Include="..\Lib\windowstimer.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="chronotimer.cpp" />
-    <ClCompile Include="windowstimer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="timerbase.hpp" />
-    <ClInclude Include="log.hpp" />
-    <ClInclude Include="chronotimer.hpp" />
-    <ClInclude Include="windowstimer.hpp" />
+    <ClInclude Include="..\Lib\chronotimer.hpp" />
+    <ClInclude Include="..\Lib\log.hpp" />
+    <ClInclude Include="..\Lib\timerbase.hpp" />
+    <ClInclude Include="..\Lib\windowstimer.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

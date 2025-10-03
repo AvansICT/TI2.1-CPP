@@ -135,7 +135,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="log.hpp" />
+    <ClInclude Include="..\Lib\log.hpp" />
     <ClInclude Include="semaphore.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

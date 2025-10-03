@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{a4ffbe52-1325-466b-ba2c-23a1cb1c7e49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Lib\log.hpp">
+      <Filter>Lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

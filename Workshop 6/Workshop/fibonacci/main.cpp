@@ -1,8 +1,8 @@
 #include <iostream>
 #include <unordered_map>
 #include <chrono>
-#include "chronotimer.hpp"
-#include "windowstimer.hpp"
+#include "..\lib\chronotimer.hpp"
+#include "..\lib\windowstimer.hpp"
 
 #define FIBONACCI_NR 45
 
