@@ -1,3 +1,5 @@
+// Disable warning messages 4244 
+#pragma warning(disable : 4244 )
 #include <iostream>
 #include <algorithm>
 #include <numeric>
@@ -18,7 +20,7 @@ int main() {
 		maximum = std::max(numbers[i], maximum);
 	}
 
-	double average = std::accumulate(vecNumbers.begin(), vecNumbers.end(), 0)/vecNumbers.size();
+	double average = std::accumulate(vecNumbers.begin(), vecNumbers.end(), 0)/(double)vecNumbers.size();
 	std::cout << "Maximum is: " << maximum << ", Average: "<< average << '\n';
 }
 
