@@ -31,6 +31,9 @@ long long fibonacciOpenMP(int n) {
 }
 
 int main() {
+    std::cout << "OpenMPFibonacci!\n";
+    std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
+
     WindowsTimer t1;
     OmpTimer t2;
     long long result_seq;
