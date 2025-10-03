@@ -12,6 +12,9 @@ void printStudent(const std::string names[], int size)
 }
 
 int main() {
+	std::cout << "AssignmentOperator!\n";
+	std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
+
 	Course course1{ "Java Programming", 10 };
 	course1.addStudent("Peter Pan"); // Add a student to course1
 

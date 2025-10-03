@@ -6,10 +6,10 @@
 /voorbeelden/Debug
 /voorbeelden/Release
 /voorbeelden/x64
-/voorbeelden/AssignmentOpetator/.vs
-/voorbeelden/AssignmentOpetator/Debug
-/voorbeelden/AssignmentOpetator/Release
-/voorbeelden/AssignmentOpetator/x64
+/voorbeelden/AssignmentOperator/.vs
+/voorbeelden/AssignmentOperator/Debug
+/voorbeelden/AssignmentOperator/Release
+/voorbeelden/AssignmentOperator/x64
 /voorbeelden/BankAccount/.vs
 /voorbeelden/BankAccount/Debug
 /voorbeelden/BankAccount/Release
@@ -122,6 +122,10 @@
 /voorbeelden/TemplateLinkedList/Debug
 /voorbeelden/TemplateLinkedList/Release
 /voorbeelden/TemplateLinkedList/x64
+/voorbeelden/ThreeFiveZero/.vs
+/voorbeelden/ThreeFiveZero/Debug
+/voorbeelden/ThreeFiveZero/Release
+/voorbeelden/ThreeFiveZero/x64
 /voorbeelden/Tuple/.vs
 /voorbeelden/Tuple/Debug
 /voorbeelden/Tuple/Release
