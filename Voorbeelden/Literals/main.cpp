@@ -17,6 +17,11 @@ std::string operator"" _tag(const char* str, std::size_t) {
     return std::string("<") + str + ">";
 }
 
+// String literal operator die een HTML-tag genereert
+std::string operator"" _html(const char* str, std::size_t) {
+    return std::string("<") + str + ">\n</" + str + ">";
+}
+
 int main() {
     std::cout << "Literals!\n";
     std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
@@ -26,6 +31,14 @@ int main() {
 
     std::string s = "title"_tag;
     std::cout << s << std::endl;
+
+    std::string head = "head"_html;
+    std::string title = "title"_html;
+
+    std::cout << "<html>\n";
+    std::cout << head << "\n";
+    std::cout << title << "\n";
+    std::cout << "</html>\n";
 }
 
 
