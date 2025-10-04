@@ -32,9 +32,8 @@ void call_from_thread(int threadId, LockType lock) {
     if (lock == LockType::Mutex && !localMutex.try_lock_for(Ms(100)))
         return;
 
-    std::stringstream ss1;
-    ss1 << "Hello, World from thread: " << threadId << std::endl;
-    std::cout << ss1.str();
+    std::cout << "Hello, World from thread ";
+    std::cout << threadId << std::endl;
 
     if (lock == LockType::Mutex)
         localMutex.unlock();
