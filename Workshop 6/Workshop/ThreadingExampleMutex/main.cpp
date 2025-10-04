@@ -4,6 +4,8 @@
 #include <sstream>
 #include <future>
 #include <chrono>
+#include <vector>
+#include <random>
 
 enum LockType {
     None = 0,
@@ -20,6 +22,12 @@ int square(int x) {
 }
 
 void call_from_thread(int threadId, LockType lock) {
+    // Simuleer random vertraging
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<int> dist(10, 100);
+    std::this_thread::sleep_for(Ms(dist(gen)));
+    
     // Mutex version
     if (lock == LockType::Mutex && !localMutex.try_lock_for(Ms(100)))
         return;
