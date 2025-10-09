@@ -132,6 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Lib\chronotimer.cpp" />
+    <ClCompile Include="..\Lib\log.cpp" />
     <ClCompile Include="..\Lib\omptimer.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -140,6 +141,10 @@
     <ClInclude Include="..\Lib\log.hpp" />
     <ClInclude Include="..\Lib\omptimer.hpp" />
     <ClInclude Include="..\Lib\timerbase.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+    <Text Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

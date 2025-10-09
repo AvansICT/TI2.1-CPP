@@ -1,12 +1,16 @@
 #include <iostream>
 #include <vector>
 #include <cstdlib> // rand()
+#include "log.hpp"
 #include "chronotimer.hpp"
 #include "omptimer.hpp"
 
 int main() {
     std::cout << "reductie\n";
     std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
+    LogOperatingSystem();
+    LogCompiler();
+
     ChronoTimer t1;
 	OmpTimer t2;
     const long long N = 10000000;

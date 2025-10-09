@@ -9,3 +9,7 @@
 #define LOG_DEBUG
 #endif
 #endif
+
+void LogOperatingSystem(void);
+
+void LogCompiler(void);
