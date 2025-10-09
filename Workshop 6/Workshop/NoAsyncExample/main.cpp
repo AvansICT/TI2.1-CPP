@@ -3,7 +3,7 @@
 #include <iostream>
 #include <chrono>
 #include <thread>
-#include "..\lib\chronotimer.hpp"
+#include "chronotimer.hpp"
 
 std::string fetchDataFromDB(const std::string& recvdData) {
 	// Make sure that function takes 5 seconds to complete

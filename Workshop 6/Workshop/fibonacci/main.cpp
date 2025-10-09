@@ -1,12 +1,13 @@
 #include <iostream>
 #include <unordered_map>
+#include <vector>
 #include <chrono>
-#include "..\lib\log.hpp"
-#include "..\lib\chronotimer.hpp"
+#include "log.hpp"
+#include "chronotimer.hpp"
 #if defined(_WIN32) || defined(_WIN64)
-#include "..\lib\windowstimer.hpp"
+#include "windowstimer.hpp"
 #elif defined(__linux__)
-#include "..\lib\linuxtimer.hpp";
+#include "linuxtimer.hpp"
 #else
 #error implement system specific timer or use generic timer
 #endif
@@ -79,7 +80,7 @@ int main()
     }
     std::cout << "t2 elapsed: " << t2.elapsedTime() << " sec\n";
 
-	// fibonacci without cache
+    // fibonacci without cache
     long long fib;
 #if defined(_WIN32) || defined(_WIN64)
     WindowsTimer t3;
@@ -88,13 +89,19 @@ int main()
 #else
 #error implement system specific timer or use generic timer
 #endif
-	t3.startTimer();
+    t3.startTimer();
     fib = fibonacci(FIBONACCI_NR);
     t3.stopTimer();
-	std::cout << "Fibonacci without cache: " << fib << " took: " << t3.elapsedTime() << " sec\n";
-	// fibonacci with cache
+    std::cout << "Fibonacci without cache: " << fib << " took: " << t3.elapsedTime() << " sec\n";
+    // fibonacci with cache
     long long fibC;
-	WindowsTimer t4;
+#if defined(_WIN32) || defined(_WIN64)
+    WindowsTimer t4;
+#elif defined(__linux__)
+    LinuxTimer t4;
+#else
+#error implement system specific timer or use generic timer
+#endif
     t4.startTimer();
     fibC = fib_cache(FIBONACCI_NR);
     t4.stopTimer();

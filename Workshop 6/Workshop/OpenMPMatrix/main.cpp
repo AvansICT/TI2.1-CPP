@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <omp.h>
-#include "..\lib\omptimer.hpp"
-#include "..\lib\chronotimer.hpp"
+#include "omptimer.hpp"
+#include "chronotimer.hpp"
 
 #define MATRIX_SIZE 999 // grootte van de matrix
 

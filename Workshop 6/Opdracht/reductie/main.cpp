@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <cstdlib> // rand()
-#include "..\lib\chronotimer.hpp"
-#include "..\lib\omptimer.hpp"
+#include "chronotimer.hpp"
+#include "omptimer.hpp"
 
 int main() {
     std::cout << "reductie\n";

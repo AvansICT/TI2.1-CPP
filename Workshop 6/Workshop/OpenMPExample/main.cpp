@@ -5,7 +5,7 @@
 #include <vector>
 #include <algorithm>
 #include <random>
-#include "..\lib\clocktimer.hpp"
+#include "clocktimer.hpp"
 
 using namespace std;
 
