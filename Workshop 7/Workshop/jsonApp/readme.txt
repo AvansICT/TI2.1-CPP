@@ -1,3 +1,4 @@
+-------------------------------------------------------------------------------
 Windows build steps for jsonApp
 
 1. Download the nlohmann json library
@@ -18,7 +19,7 @@ Check if the file json-3.12.0/include/nlohmann/json.hpp exists
  project properties -> C/C++ -> General -> Additional Include Directories)
 
 4. build project with visual studio
-
+-------------------------------------------------------------------------------
 Linux build steps for jsonApp
 
 1. Open terminal
@@ -43,7 +44,7 @@ unzip main.zip
 7. Download the nlohmann json library
 wget https://github.com/nlohmann/json/archive/refs/tags/v3.12.0.zip
 
-8. Unzip the nlohmann json library 
+8. Unzip the nlohmann json library to the folder Workshop 7
 unzip v3.12.0.zip -d TI2.1-CPP-main/Workshop\ 7/
 
 10. Check if the archive is unzipped correctly

@@ -10,6 +10,7 @@ int main() {
     std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
     LogOperatingSystem();
     LogCompiler();
+    LogCxxStandard();
 
     ChronoTimer t1;
 	OmpTimer t2;
