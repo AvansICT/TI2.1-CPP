@@ -1,4 +1,25 @@
-Linux build steps for myApp
+Windows build steps for jsonApp
+
+1. Download the nlohmann json library
+from https://github.com/nlohmann/json/archive/refs/tags/v3.12.0.zip
+
+2. Unzip the nlohmann json library to the folder Workshop 7
+The structure should be like this:
+Workshop 7
+  |-- Workshop
+	   |-- jsonApp
+			|-- CMakeLists.txt
+			|-- main.cpp
+			|-- data.json
+  |-- json-3.12.0
+3. Check if the archive is unzipped correctly
+Check if the file json-3.12.0/include/nlohmann/json.hpp exists
+(the include directories are hardcoded in visual studio project file
+ project properties -> C/C++ -> General -> Additional Include Directories)
+
+4. build project with visual studio
+
+Linux build steps for jsonApp
 
 1. Open terminal
 
@@ -25,23 +46,27 @@ wget https://github.com/nlohmann/json/archive/refs/tags/v3.12.0.zip
 8. Unzip the nlohmann json library 
 unzip v3.12.0.zip -d TI2.1-CPP-main/Workshop\ 7/
 
-9. navigate to the unzipped folder
+10. Check if the archive is unzipped correctly
+Check if the file json-3.12.0/include/nlohmann/json.hpp exists
+(the include directories are hardcoded in CMakeLists.txt)
+
+11. navigate to the unzipped folder
 cd TI2.1-CPP-main/Workshop\ 7/Workshop/jsonApp/
 
-10. Create a build folder, copy json example file and navigate to it
+12. Create a build folder, copy json example file and navigate to it
 mkdir build
 cp data.json build/
 cd build
 
-11. Make sure g++ is used as C++ compiler
+13. Make sure g++ is used as C++ compiler
    (note: for c files use the gcc compiler must be used)
 export CXX=/usr/bin/g++
 
-12. Run cmake
+14. Run cmake
 cmake ..
 
-13. Run make
+15. Run make
 make
 
-14. Run the program
+16. Run the program
 ./jsonApp
