@@ -133,6 +133,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Lib\chronotimer.cpp" />
+    <ClCompile Include="..\Lib\log.cpp" />
     <ClCompile Include="..\Lib\windowstimer.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>

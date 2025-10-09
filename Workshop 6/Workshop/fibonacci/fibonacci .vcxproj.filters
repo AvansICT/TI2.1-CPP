@@ -8,6 +8,9 @@
     <ClCompile Include="..\Lib\windowstimer.cpp">
       <Filter>Lib</Filter>
     </ClCompile>
+    <ClCompile Include="..\Lib\log.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Lib">

@@ -1,8 +1,16 @@
 #include <iostream>
 #include <unordered_map>
 #include <chrono>
+#include "..\lib\log.hpp"
 #include "..\lib\chronotimer.hpp"
+#if defined(_WIN32) || defined(_WIN64)
 #include "..\lib\windowstimer.hpp"
+#elif defined(__linux__)
+#include "..\lib\linuxtimer.hpp";
+#else
+#error implement system specific timer or use generic timer
+#endif
+
 
 #define FIBONACCI_NR 45
 
@@ -34,7 +42,11 @@ long long fibonacci(long long n)
 
 int main()
 {
-    std::cout << "Fibonacci Sequence using C++\n";
+    std::cout << "Fibonacci Sequence using C++!\n";
+    std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
+    LogOperatingSystem();
+    LogCompiler();
+
     std::vector<long long> results(FIBONACCI_NR);
     // fibonacci measured with chronotimer
     ChronoTimer t1;
@@ -48,8 +60,15 @@ int main()
     }
     std::cout << "t1 elapsed: " << t1.elapsedTime() << " sec\n";
 
-    // fibonacci measured with windowtimer
+    // fibonacci measured with windowtimer / linux timer
+
+#if defined(_WIN32) || defined(_WIN64)
     WindowsTimer t2;
+#elif defined(__linux__)
+    LinuxTimer t2;
+#else
+#error implement system specific timer or use generic timer
+#endif
     t2.startTimer();
     for (int i = 1; i <= FIBONACCI_NR; i++) {
         results[i - 1] = fibonacci(i);
@@ -62,7 +81,13 @@ int main()
 
 	// fibonacci without cache
     long long fib;
+#if defined(_WIN32) || defined(_WIN64)
     WindowsTimer t3;
+#elif defined(__linux__)
+    LinuxTimer t3;
+#else
+#error implement system specific timer or use generic timer
+#endif
 	t3.startTimer();
     fib = fibonacci(FIBONACCI_NR);
     t3.stopTimer();
