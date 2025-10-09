@@ -32,3 +32,24 @@ void LogCompiler(void)
 	std::cout << "Unknown compiler" << std::endl;
 #endif
 }
+
+void LogCxxStandard(void)
+{
+	std::cout << "C++ standard:";
+#if __cplusplus >= 202400L
+	std::cout << "post C++23";
+#elif __cplusplus == 202302L
+	std::cout << "C++23";
+#elif __cplusplus == 202002L
+	std::cout << "C++20";
+#elif __cplusplus == 201703L
+	std::cout << "C++17";
+#elif __cplusplus == 201402L
+	std::cout << "C++14";
+#elif __cplusplus == 201103L
+	std::cout << "C++11";
+#else
+	std::cout << "pre C++11";
+#endif
+	std::cout << "(" << __cplusplus << ")" << std::endl;
+}

@@ -2,6 +2,7 @@
 *.ipch
 *.user
 
+## voorbeelden
 /voorbeelden/.vs
 /voorbeelden/Debug
 /voorbeelden/Release
@@ -143,6 +144,7 @@
 /voorbeelden/HelloPointer/Release
 /voorbeelden/HelloPointer/x64
 
+## Workshop 1
 /Workshop 1/Helloworld/.vs
 /Workshop 1/Helloworld/Debug
 /Workshop 1/Helloworld/Release
@@ -161,6 +163,7 @@
 /Workshop 1/Opdracht/robot/Debug
 /Workshop 1/Opdracht/robot/Release
 
+## Workshop 2
 /Workshop 2/Workshop/.vs
 /Workshop 2/Workshop/Debug
 /Workshop 2/Workshop/Release
@@ -197,6 +200,7 @@
 /Workshop 2/Workshop/groep8/Release
 /Workshop 2/Opdracht/.vs
 
+## Workshop 3
 /Workshop 3/Workshop/.vs
 /Workshop 3/Workshop/Debug
 /Workshop 3/Workshop/Release
@@ -239,6 +243,7 @@
 /Workshop 3/Opdracht/Opdracht4/Debug
 /Workshop 3/Opdracht/Opdracht4/Release
 
+## Workshop 4
 /Workshop 4/Workshop/.vs
 /Workshop 4/Workshop/Debug
 /Workshop 4/Workshop/Release
@@ -281,6 +286,7 @@
 /Workshop 4/Opdracht/Opdracht/Debug
 /Workshop 4/Opdracht/Opdracht/Release
 
+## Workshop 5
 /Workshop 5/Workshop/.vs
 /Workshop 5/Workshop/Debug
 /Workshop 5/Workshop/Release
@@ -320,6 +326,7 @@
 /Workshop 5/Opdracht/Opdracht/Debug
 /Workshop 5/Opdracht/Opdracht/Release
 
+## Workshop 6
 /Workshop 6/Workshop/.vs
 /Workshop 6/Workshop/Debug
 /Workshop 6/Workshop/Release
@@ -395,6 +402,7 @@
 /Workshop 6/Opdracht/reductie/Debug
 /Workshop 6/Opdracht/reductie/Release
 
+## Workshop 7
 /Workshop 7/Workshop/.vs
 /Workshop 7/Workshop/Debug
 /Workshop 7/Workshop/Release
@@ -433,3 +441,9 @@
 /Workshop 7/Opdracht/Opdracht/x64
 /Workshop 7/Opdracht/Opdracht/Debug
 /Workshop 7/Opdracht/Opdracht/Release
+/Workshop 7/Workshop/jsonApp/x64
+/Workshop 7/Workshop/jsonApp/Debug
+/Workshop 7/Workshop/jsonApp/Release
+/Workshop 7/Workshop/jsonApp/data_out.json
+## ignore nlohmann json library
+/Workshop 7/json-3.12.0

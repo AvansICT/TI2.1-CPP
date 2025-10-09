@@ -13,3 +13,5 @@
 void LogOperatingSystem(void);
 
 void LogCompiler(void);
+
+void LogCxxStandard(void);
