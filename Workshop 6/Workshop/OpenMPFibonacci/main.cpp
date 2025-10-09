@@ -1,9 +1,16 @@
-#include "omptimer.hpp"
-#include "windowstimer.hpp"
 #include <vector>
 #include <iostream>
 #include<algorithm>
 #include <omp.h>
+#include "log.hpp"
+#include "omptimer.hpp"
+#if defined(_WIN32) || defined(_WIN64)
+#include "windowstimer.hpp"
+#elif defined(__linux__)
+#include "linuxtimer.hpp"
+#else
+#error implement system specific timer or use generic timer
+#endif
 
 #define FIBONACCI_NR 45
 // Sequential recursive Fibonacci
@@ -33,8 +40,16 @@ long long fibonacciOpenMP(int n) {
 int main() {
     std::cout << "OpenMPFibonacci!\n";
     std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
+    LogOperatingSystem();
+    LogCompiler();
 
+#if defined(_WIN32) || defined(_WIN64)
     WindowsTimer t1;
+#elif defined(__linux__)
+    LinuxTimer t1;
+#else
+#error implement system specific timer or use generic timer
+#endif
     OmpTimer t2;
     long long result_seq;
     std::vector<long long> results_seq(FIBONACCI_NR);

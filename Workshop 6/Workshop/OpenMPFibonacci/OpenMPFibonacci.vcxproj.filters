@@ -8,6 +8,9 @@
     <ClCompile Include="..\Lib\windowstimer.cpp">
       <Filter>Lib</Filter>
     </ClCompile>
+    <ClCompile Include="..\Lib\log.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Lib\log.hpp">
@@ -27,5 +30,9 @@
     <Filter Include="Lib">
       <UniqueIdentifier>{4141f61d-c4a5-4ddf-88c8-c3edd513d59a}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+    <Text Include="readme.txt" />
   </ItemGroup>
 </Project>
