@@ -8,11 +8,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Add the executable
 add_executable(jsonApp
     main.cpp
-    ../Lib/log.cpp
+    ../../../Lib/log.cpp
 )
 
 # Add include directory for headers
-target_include_directories(jsonApp PRIVATE ../Lib ../../json-3.12.0/include)
+target_include_directories(jsonApp PRIVATE ../../../Lib ../../json-3.12.0/include)
 
-# Explicitly link stdc++ and nlohmann_json
+# Explicitly link stdc++
 target_link_libraries(jsonApp PRIVATE stdc++)

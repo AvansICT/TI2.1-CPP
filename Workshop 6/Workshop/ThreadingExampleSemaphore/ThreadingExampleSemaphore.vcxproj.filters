@@ -4,13 +4,13 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Lib\log.hpp">
-      <Filter>Lib</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Lib">
       <UniqueIdentifier>{14f74175-3805-4d66-9992-2e7aef62e60e}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Lib\log.hpp">
+      <Filter>Lib</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

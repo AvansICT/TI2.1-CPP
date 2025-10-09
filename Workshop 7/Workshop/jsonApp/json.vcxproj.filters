@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="..\Lib\log.cpp">
+    <ClCompile Include="..\..\..\Lib\log.cpp">
       <Filter>Lib</Filter>
     </ClCompile>
   </ItemGroup>
@@ -12,15 +12,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Lib\log.hpp">
-      <Filter>Lib</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="data.json" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
     <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Lib\log.hpp">
+      <Filter>Lib</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

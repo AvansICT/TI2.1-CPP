@@ -11,13 +11,13 @@ find_package(OpenMP REQUIRED)
 # Add the executable
 add_executable(openmpfibonacci
     main.cpp
-    ../Lib/log.cpp
-    ../Lib/omptimer.cpp
-    ../Lib/linuxtimer.cpp
+    ../../../Lib/log.cpp
+    ../../../Lib/omptimer.cpp
+    ../../../Lib/linuxtimer.cpp
 )
 
 # Add include directory for headers
-target_include_directories(openmpfibonacci PRIVATE ../Lib)
+target_include_directories(openmpfibonacci PRIVATE ../../../Lib)
 
 # Explicitly link stdc++ and OpenMP
 target_link_libraries(openmpfibonacci PRIVATE stdc++ OpenMP::OpenMP_CXX)

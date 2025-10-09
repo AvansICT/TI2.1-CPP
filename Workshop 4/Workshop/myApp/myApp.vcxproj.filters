@@ -4,15 +4,21 @@
     <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Lib\log.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\log.hpp">
-      <Filter>src</Filter>
+    <ClInclude Include="..\..\..\Lib\log.hpp">
+      <Filter>Lib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
       <UniqueIdentifier>{c732d7b4-e5d6-4f8d-a931-232a48f3f223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{13b851c8-0a27-4189-a991-30eeac619d09}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

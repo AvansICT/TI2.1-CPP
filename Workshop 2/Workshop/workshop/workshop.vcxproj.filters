@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="robot.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="robot.hpp" />
+    <ClInclude Include="..\..\..\Lib\log.hpp">
+      <Filter>Lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{ec8d8f31-2cfd-4060-8555-5248e453c70e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -42,6 +42,7 @@ int main() {
     std::cout << __DATE__ << " " << __TIME__ << std::endl;
     LogOperatingSystem();
     LogCompiler();
+    LogCxxStandard();
 
 #if defined(_WIN32) || defined(_WIN64)
     WindowsTimer t1;

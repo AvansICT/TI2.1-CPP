@@ -139,7 +139,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="customer.hpp" />
-    <ClInclude Include="log.hpp" />
     <ClInclude Include="patient.hpp" />
     <ClInclude Include="person.hpp" />
     <ClInclude Include="student.hpp" />

@@ -9,7 +9,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Lib\log.hpp">
+    <ClInclude Include="..\..\..\Lib\log.hpp">
       <Filter>Lib</Filter>
     </ClInclude>
   </ItemGroup>

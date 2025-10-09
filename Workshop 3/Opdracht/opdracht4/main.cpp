@@ -1,4 +1,7 @@
 #include <iostream>
+#include <print>    //C++23
+#include "log.hpp"
+
 using namespace std;
 
 class Student {
@@ -25,6 +28,7 @@ public:
 // TODO: initialiseer static variabele
 
 int main() {
+    std::print("Hello, Opdracht 4\n");    // C++23 feature
     Student s1(101);
     Student s2(102);
 

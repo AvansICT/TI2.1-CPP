@@ -2,29 +2,15 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="..\Lib\omptimer.cpp">
+    <ClCompile Include="..\..\..\Lib\log.cpp">
       <Filter>Lib</Filter>
     </ClCompile>
-    <ClCompile Include="..\Lib\windowstimer.cpp">
+    <ClCompile Include="..\..\..\Lib\omptimer.cpp">
       <Filter>Lib</Filter>
     </ClCompile>
-    <ClCompile Include="..\Lib\log.cpp">
+    <ClCompile Include="..\..\..\Lib\windowstimer.cpp">
       <Filter>Lib</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\Lib\log.hpp">
-      <Filter>Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Lib\omptimer.hpp">
-      <Filter>Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Lib\timerbase.hpp">
-      <Filter>Lib</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Lib\windowstimer.hpp">
-      <Filter>Lib</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Lib">
@@ -34,5 +20,19 @@
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
     <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Lib\log.hpp">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\omptimer.hpp">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\timerbase.hpp">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\windowstimer.hpp">
+      <Filter>Lib</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

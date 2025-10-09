@@ -23,7 +23,6 @@ int main()
 #else
 #error Platform not supported
 #endif
-
     std::cout << __DATE__ << " " << __TIME__ << std::endl << std::endl; // log date and time of compilation, not runtime
 
     // demo of binary literals
