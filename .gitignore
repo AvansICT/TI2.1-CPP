@@ -144,6 +144,36 @@
 /voorbeelden/HelloPointer/Release
 /voorbeelden/HelloPointer/x64
 
+## collaboration
+/Collaboration/.vs
+/Collaboration/Debug
+/Collaboration/Release
+/Collaboration/x64
+/Collaboration/groep1/x64
+/Collaboration/groep1/Debug
+/Collaboration/groep1/Release
+/Collaboration/groep2/x64
+/Collaboration/groep2/Debug
+/Collaboration/groep2/Release
+/Collaboration/groep3/x64
+/Collaboration/groep3/Debug
+/Collaboration/groep3/Release
+/Collaboration/groep4/x64
+/Collaboration/groep4/Debug
+/Collaboration/groep4/Release
+/Collaboration/groep5/x64
+/Collaboration/groep5/Debug
+/Collaboration/groep5/Release
+/Collaboration/groep6/x64
+/Collaboration/groep6/Debug
+/Collaboration/groep6/Release
+/Collaboration/groep7/x64
+/Collaboration/groep7/Debug
+/Collaboration/groep7/Release
+/Collaboration/groep8/x64
+/Collaboration/groep8/Debug
+/Collaboration/groep8/Release
+
 ## Workshop 1
 /Workshop 1/Helloworld/.vs
 /Workshop 1/Helloworld/Debug
@@ -174,30 +204,6 @@
 /Workshop 2/Workshop/workshop/x64
 /Workshop 2/Workshop/workshop/Debug
 /Workshop 2/Workshop/workshop/Release
-/Workshop 2/Workshop/groep1/x64
-/Workshop 2/Workshop/groep1/Debug
-/Workshop 2/Workshop/groep1/Release
-/Workshop 2/Workshop/groep2/x64
-/Workshop 2/Workshop/groep2/Debug
-/Workshop 2/Workshop/groep2/Release
-/Workshop 2/Workshop/groep3/x64
-/Workshop 2/Workshop/groep3/Debug
-/Workshop 2/Workshop/groep3/Release
-/Workshop 2/Workshop/groep4/x64
-/Workshop 2/Workshop/groep4/Debug
-/Workshop 2/Workshop/groep4/Release
-/Workshop 2/Workshop/groep5/x64
-/Workshop 2/Workshop/groep5/Debug
-/Workshop 2/Workshop/groep5/Release
-/Workshop 2/Workshop/groep6/x64
-/Workshop 2/Workshop/groep6/Debug
-/Workshop 2/Workshop/groep6/Release
-/Workshop 2/Workshop/groep7/x64
-/Workshop 2/Workshop/groep7/Debug
-/Workshop 2/Workshop/groep7/Release
-/Workshop 2/Workshop/groep8/x64
-/Workshop 2/Workshop/groep8/Debug
-/Workshop 2/Workshop/groep8/Release
 /Workshop 2/Opdracht/.vs
 
 ## Workshop 3
@@ -211,30 +217,6 @@
 /Workshop 3/Workshop/workshop/x64
 /Workshop 3/Workshop/workshop/Debug
 /Workshop 3/Workshop/workshop/Release
-/Workshop 3/Workshop/groep1/x64
-/Workshop 3/Workshop/groep1/Debug
-/Workshop 3/Workshop/groep1/Release
-/Workshop 3/Workshop/groep2/x64
-/Workshop 3/Workshop/groep2/Debug
-/Workshop 3/Workshop/groep2/Release
-/Workshop 3/Workshop/groep3/x64
-/Workshop 3/Workshop/groep3/Debug
-/Workshop 3/Workshop/groep3/Release
-/Workshop 3/Workshop/groep4/x64
-/Workshop 3/Workshop/groep4/Debug
-/Workshop 3/Workshop/groep4/Release
-/Workshop 3/Workshop/groep5/x64
-/Workshop 3/Workshop/groep5/Debug
-/Workshop 3/Workshop/groep5/Release
-/Workshop 3/Workshop/groep6/x64
-/Workshop 3/Workshop/groep6/Debug
-/Workshop 3/Workshop/groep6/Release
-/Workshop 3/Workshop/groep7/x64
-/Workshop 3/Workshop/groep7/Debug
-/Workshop 3/Workshop/groep7/Release
-/Workshop 3/Workshop/groep8/x64
-/Workshop 3/Workshop/groep8/Debug
-/Workshop 3/Workshop/groep8/Release
 /Workshop 3/Opdracht/.vs
 /Workshop 3/Opdracht/x64
 /Workshop 3/Opdracht/Debug
@@ -254,30 +236,6 @@
 /Workshop 4/Workshop/workshop/x64
 /Workshop 4/Workshop/workshop/Debug
 /Workshop 4/Workshop/workshop/Release
-/Workshop 4/Workshop/groep1/x64
-/Workshop 4/Workshop/groep1/Debug
-/Workshop 4/Workshop/groep1/Release
-/Workshop 4/Workshop/groep2/x64
-/Workshop 4/Workshop/groep2/Debug
-/Workshop 4/Workshop/groep2/Release
-/Workshop 4/Workshop/groep3/x64
-/Workshop 4/Workshop/groep3/Debug
-/Workshop 4/Workshop/groep3/Release
-/Workshop 4/Workshop/groep4/x64
-/Workshop 4/Workshop/groep4/Debug
-/Workshop 4/Workshop/groep4/Release
-/Workshop 4/Workshop/groep5/x64
-/Workshop 4/Workshop/groep5/Debug
-/Workshop 4/Workshop/groep5/Release
-/Workshop 4/Workshop/groep6/x64
-/Workshop 4/Workshop/groep6/Debug
-/Workshop 4/Workshop/groep6/Release
-/Workshop 4/Workshop/groep7/x64
-/Workshop 4/Workshop/groep7/Debug
-/Workshop 4/Workshop/groep7/Release
-/Workshop 4/Workshop/groep8/x64
-/Workshop 4/Workshop/groep8/Debug
-/Workshop 4/Workshop/groep8/Release
 /Workshop 4/Opdracht/.vs
 /Workshop 4/Opdracht/x64
 /Workshop 4/Opdracht/Debug
@@ -294,30 +252,6 @@
 /Workshop 5/Workshop/workshop/x64
 /Workshop 5/Workshop/workshop/Debug
 /Workshop 5/Workshop/workshop/Release
-/Workshop 5/Workshop/groep1/x64
-/Workshop 5/Workshop/groep1/Debug
-/Workshop 5/Workshop/groep1/Release
-/Workshop 5/Workshop/groep2/x64
-/Workshop 5/Workshop/groep2/Debug
-/Workshop 5/Workshop/groep2/Release
-/Workshop 5/Workshop/groep3/x64
-/Workshop 5/Workshop/groep3/Debug
-/Workshop 5/Workshop/groep3/Release
-/Workshop 5/Workshop/groep4/x64
-/Workshop 5/Workshop/groep4/Debug
-/Workshop 5/Workshop/groep4/Release
-/Workshop 5/Workshop/groep5/x64
-/Workshop 5/Workshop/groep5/Debug
-/Workshop 5/Workshop/groep5/Release
-/Workshop 5/Workshop/groep6/x64
-/Workshop 5/Workshop/groep6/Debug
-/Workshop 5/Workshop/groep6/Release
-/Workshop 5/Workshop/groep7/x64
-/Workshop 5/Workshop/groep7/Debug
-/Workshop 5/Workshop/groep7/Release
-/Workshop 5/Workshop/groep8/x64
-/Workshop 5/Workshop/groep8/Debug
-/Workshop 5/Workshop/groep8/Release
 /Workshop 5/Opdracht/.vs
 /Workshop 5/Opdracht/x64
 /Workshop 5/Opdracht/Debug
@@ -334,30 +268,6 @@
 /Workshop 6/Workshop/workshop/x64
 /Workshop 6/Workshop/workshop/Debug
 /Workshop 6/Workshop/workshop/Release
-/Workshop 6/Workshop/groep1/x64
-/Workshop 6/Workshop/groep1/Debug
-/Workshop 6/Workshop/groep1/Release
-/Workshop 6/Workshop/groep2/x64
-/Workshop 6/Workshop/groep2/Debug
-/Workshop 6/Workshop/groep2/Release
-/Workshop 6/Workshop/groep3/x64
-/Workshop 6/Workshop/groep3/Debug
-/Workshop 6/Workshop/groep3/Release
-/Workshop 6/Workshop/groep4/x64
-/Workshop 6/Workshop/groep4/Debug
-/Workshop 6/Workshop/groep4/Release
-/Workshop 6/Workshop/groep5/x64
-/Workshop 6/Workshop/groep5/Debug
-/Workshop 6/Workshop/groep5/Release
-/Workshop 6/Workshop/groep6/x64
-/Workshop 6/Workshop/groep6/Debug
-/Workshop 6/Workshop/groep6/Release
-/Workshop 6/Workshop/groep7/x64
-/Workshop 6/Workshop/groep7/Debug
-/Workshop 6/Workshop/groep7/Release
-/Workshop 6/Workshop/groep8/x64
-/Workshop 6/Workshop/groep8/Debug
-/Workshop 6/Workshop/groep8/Release
 /Workshop 6/Workshop/ThreadingExampleBarrier/x64
 /Workshop 6/Workshop/ThreadingExampleBarrier/Debug
 /Workshop 6/Workshop/ThreadingExampleBarrier/Release
@@ -410,30 +320,6 @@
 /Workshop 7/Workshop/workshop/x64
 /Workshop 7/Workshop/workshop/Debug
 /Workshop 7/Workshop/workshop/Release
-/Workshop 7/Workshop/groep1/x64
-/Workshop 7/Workshop/groep1/Debug
-/Workshop 7/Workshop/groep1/Release
-/Workshop 7/Workshop/groep2/x64
-/Workshop 7/Workshop/groep2/Debug
-/Workshop 7/Workshop/groep2/Release
-/Workshop 7/Workshop/groep3/x64
-/Workshop 7/Workshop/groep3/Debug
-/Workshop 7/Workshop/groep3/Release
-/Workshop 7/Workshop/groep4/x64
-/Workshop 7/Workshop/groep4/Debug
-/Workshop 7/Workshop/groep4/Release
-/Workshop 7/Workshop/groep5/x64
-/Workshop 7/Workshop/groep5/Debug
-/Workshop 7/Workshop/groep5/Release
-/Workshop 7/Workshop/groep6/x64
-/Workshop 7/Workshop/groep6/Debug
-/Workshop 7/Workshop/groep6/Release
-/Workshop 7/Workshop/groep7/x64
-/Workshop 7/Workshop/groep7/Debug
-/Workshop 7/Workshop/groep7/Release
-/Workshop 7/Workshop/groep8/x64
-/Workshop 7/Workshop/groep8/Debug
-/Workshop 7/Workshop/groep8/Release
 /Workshop 7/Opdracht/.vs
 /Workshop 7/Opdracht/x64
 /Workshop 7/Opdracht/Debug
