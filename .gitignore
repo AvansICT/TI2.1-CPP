@@ -333,3 +333,17 @@
 /Workshop 7/Workshop/jsonApp/data_out.json
 ## ignore nlohmann json library
 /Workshop 7/json-3.12.0
+/Workshop 7/Workshop/endianness/x64
+/Workshop 7/Workshop/endianness/Debug
+/Workshop 7/Workshop/endianness/Release
+/Workshop 7/Workshop/endianness/data_out.json
+/Workshop 7/Workshop/tcpclient/.vs
+/Workshop 7/Workshop/tcpclient/Debug
+/Workshop 7/Workshop/tcpclient/Release
+/Workshop 7/Workshop/tcpclient/x64
+/Workshop 7/Workshop/tcpclient/tcpclient
+/Workshop 7/Workshop/tcpserver/.vs
+/Workshop 7/Workshop/tcpserver/Debug
+/Workshop 7/Workshop/tcpserver/Release
+/Workshop 7/Workshop/tcpserver/x64
+/Workshop 7/Workshop/tcpserver/tcpserver

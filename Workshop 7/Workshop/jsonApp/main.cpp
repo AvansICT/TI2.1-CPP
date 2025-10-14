@@ -7,7 +7,7 @@
 using json = nlohmann::json;
 
 int main() {
-    std::cout << "Workshop 7!\n";
+    std::cout << "jsonApp!\n";
     std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
     LogOperatingSystem();
     LogCompiler();
