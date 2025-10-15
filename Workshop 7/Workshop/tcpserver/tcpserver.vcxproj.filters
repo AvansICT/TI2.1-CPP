@@ -15,6 +15,9 @@
     <ClInclude Include="..\..\..\Lib\log.hpp">
       <Filter>Lib</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Lib\socket.hpp">
+      <Filter>Lib</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />

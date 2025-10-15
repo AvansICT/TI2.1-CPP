@@ -8,10 +8,8 @@
 #else
 #define LOG_DEBUG
 #endif
-#endif
 
 void LogOperatingSystem(void);
-
 void LogCompiler(void);
-
 void LogCxxStandard(void);
+#endif
