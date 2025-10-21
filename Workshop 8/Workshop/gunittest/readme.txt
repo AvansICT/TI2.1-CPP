@@ -1,6 +1,12 @@
 -------------------------------------------------------------------------------
 Windows build steps for gunittest
 
+The GoogleTest can be generated with visual studio for this project this was 
+NOT done. The GoogleTest sources were downloaded and unzipped manually.
+And these were included in the visual studio project. Look at the gtest filter
+in the gunittest project for the included GoogleTest source files. And gtest-all.cc
+was excluded from build.
+
 1. Download the GoogleTest - Google Testing and Mocking Framework
 from https://github.com/google/googletest/archive/refs/tags/v1.17.0.zip
 
