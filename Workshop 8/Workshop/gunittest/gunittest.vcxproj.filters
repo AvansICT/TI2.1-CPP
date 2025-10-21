@@ -38,6 +38,9 @@
     <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest-all.cc">
       <Filter>gtest</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Lib\log.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Lib">

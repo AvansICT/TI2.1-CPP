@@ -10,7 +10,9 @@ int main() {
     // simple basic app used for unit tests
     std::cout << "myApp!\n";
     std::cout << __DATE__ << " " << __TIME__ << std::endl; // log date and time of compilation, not runtime
-
+    LogOperatingSystem();
+    LogCompiler();
+    LogCxxStandard();
 	// use the functions from myapp
     std::cout << "add result:" << myApp::add(N1, N2) << std::endl;
     std::cout << "sub result:" << myApp::subtract(N1, N2) << std::endl;

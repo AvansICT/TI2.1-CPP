@@ -1,7 +1,108 @@
 #include <gtest/gtest.h>
 #include "myapp.hpp"
-
+#include "log.hpp"
 using namespace myApp;  // to avoid repeating myApp::
+
+TEST(LogOperatingSystemTests, DetectsOperatingSystemOutput)
+{
+	LogOperatingSystem(); // log to console
+    // Capture console output
+    testing::internal::CaptureStdout();
+
+    LogOperatingSystem();
+
+    std::string output = testing::internal::GetCapturedStdout();
+
+#if defined(_WIN32) && defined(_WIN64)
+    EXPECT_NE(output.find("Windows 64-bit"), std::string::npos);
+#elif defined(_WIN32)
+    EXPECT_NE(output.find("Windows 32-bit"), std::string::npos);
+#elif defined(__APPLE__) || defined(__MACH__)
+    EXPECT_NE(output.find("macOS"), std::string::npos);
+#elif defined(__linux__)
+    EXPECT_NE(output.find("Linux"), std::string::npos);
+#elif defined(__unix__)
+    EXPECT_NE(output.find("Unix"), std::string::npos);
+#elif defined(_POSIX_VERSION)
+    EXPECT_NE(output.find("POSIX-compliant OS"), std::string::npos);
+#else
+    EXPECT_NE(output.find("Unknown OS"), std::string::npos);
+#endif
+}
+
+TEST(LogCompilerTests, DetectsCompilerOutput)
+{
+    LogCompiler(); // log to console
+    // Capture stdout before calling the function
+    testing::internal::CaptureStdout();
+
+    LogCompiler();
+
+    std::string output = testing::internal::GetCapturedStdout();
+
+#if defined(__clang__)
+    EXPECT_NE(output.find("Clang version"), std::string::npos)
+        << "Expected Clang output, got: " << output;
+
+#elif defined(__GNUC__) || defined(__GNUG__)
+    EXPECT_NE(output.find("GCC version"), std::string::npos)
+        << "Expected GCC output, got: " << output;
+
+#elif defined(_MSC_FULL_VER)
+    EXPECT_NE(output.find("MSVC version"), std::string::npos)
+        << "Expected MSVC output, got: " << output;
+
+#else
+    EXPECT_NE(output.find("Unknown compiler"), std::string::npos)
+        << "Expected 'Unknown compiler' output, got: " << output;
+#endif
+}
+
+TEST(LogCxxStandardTests, DetectsCxxVersionOutput)
+{
+    LogCxxStandard(); // log to console
+    testing::internal::CaptureStdout();
+
+    LogCxxStandard();
+
+    std::string output = testing::internal::GetCapturedStdout();
+
+    // The test dynamically checks which branch should be active
+    // based on the compile-time value of __cplusplus
+#if __cplusplus >= 202400L
+    EXPECT_NE(output.find("post C++23"), std::string::npos)
+        << "Expected 'post C++23', got: " << output;
+
+#elif __cplusplus == 202302L
+    EXPECT_NE(output.find("C++23"), std::string::npos)
+        << "Expected 'C++23', got: " << output;
+
+#elif __cplusplus == 202002L
+    EXPECT_NE(output.find("C++20"), std::string::npos)
+        << "Expected 'C++20', got: " << output;
+
+#elif __cplusplus == 201703L
+    EXPECT_NE(output.find("C++17"), std::string::npos)
+        << "Expected 'C++17', got: " << output;
+
+#elif __cplusplus == 201402L
+    EXPECT_NE(output.find("C++14"), std::string::npos)
+        << "Expected 'C++14', got: " << output;
+
+#elif __cplusplus == 201103L
+    EXPECT_NE(output.find("C++11"), std::string::npos)
+        << "Expected 'C++11', got: " << output;
+
+#else
+    EXPECT_NE(output.find("pre C++11"), std::string::npos)
+        << "Expected 'pre C++11', got: " << output;
+#endif
+
+    // Optional: ensure the numeric value of __cplusplus is printed too
+    EXPECT_NE(output.find(std::to_string(__cplusplus)), std::string::npos)
+        << "Expected numeric C++ version (" << __cplusplus << ") to appear in output.";
+}
+
 
 //
 // ---------- Free Function Tests ----------

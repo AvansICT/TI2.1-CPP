@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Add the executable
 add_executable(myApp
     main.cpp
+    myapp.cpp
     ../../../Lib/log.cpp
 )
 
