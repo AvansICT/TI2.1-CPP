@@ -6,16 +6,25 @@
     <ClCompile Include="..\myApp\myapp.cpp">
       <Filter>myApp</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Lib\log.cpp">
+      <Filter>Lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="..\myApp\myapp.hpp">
       <Filter>myApp</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Lib\log.hpp">
+      <Filter>Lib</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="myApp">
       <UniqueIdentifier>{ec3fc9a4-0275-4bfa-b50b-607915c601d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{1e3ceaf7-53dc-45d0-96a2-df754266db43}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Lib\log.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="myapp.cpp" />
   </ItemGroup>
