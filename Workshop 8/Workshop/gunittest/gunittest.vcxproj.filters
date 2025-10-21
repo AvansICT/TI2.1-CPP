@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="gunittest.cpp" />
+    <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest_main.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest-assertion-result.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest-filepath.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest-matchers.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest-printers.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest-test-part.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest-typed-test.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest-death-test.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest-port.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\myApp\myapp.cpp">
+      <Filter>myApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest-all.cc">
+      <Filter>gtest</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{3f982ca2-fa2d-4a05-9c03-c175b73ff6ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gtest">
+      <UniqueIdentifier>{ebdd1533-5be4-4dbf-b326-787c88bac229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="myApp">
+      <UniqueIdentifier>{fe68c6f0-e0e4-4831-bccc-c7814a67d15a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Lib\log.hpp">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\googletest-1.17.0\googletest\src\gtest-internal-inl.h">
+      <Filter>gtest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\myApp\myapp.hpp">
+      <Filter>myApp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
+</Project>

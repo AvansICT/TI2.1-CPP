@@ -353,3 +353,37 @@
 /Workshop 7/Workshop/udpserver/Release
 /Workshop 7/Workshop/udpserver/x64
 /Workshop 7/Workshop/udpserver/udpserver
+
+## Workshop 8
+/Workshop 8/Workshop/.vs
+/Workshop 8/Workshop/Debug
+/Workshop 8/Workshop/packages
+/Workshop 8/Workshop/Release
+/Workshop 8/Workshop/x64
+/Workshop 8/Workshop/workshop/x64
+/Workshop 8/Workshop/workshop/Debug
+/Workshop 8/Workshop/workshop/Release
+## ignore google test
+/Workshop 8/googletest-1.17.0
+/Workshop 8/Opdracht/.vs
+/Workshop 8/Opdracht/x64
+/Workshop 8/Opdracht/Debug
+/Workshop 8/Opdracht/Release
+/Workshop 8/Opdracht/Opdracht/x64
+/Workshop 8/Opdracht/Opdracht/Debug
+/Workshop 8/Opdracht/Opdracht/Release
+/Workshop 8/Workshop/myApp/.vs
+/Workshop 8/Workshop/myApp/Debug
+/Workshop 8/Workshop/myApp/Release
+/Workshop 8/Workshop/myApp/x64
+/Workshop 8/Workshop/myApp/myApp
+/Workshop 8/Workshop/gunittest/.vs
+/Workshop 8/Workshop/gunittest/Debug
+/Workshop 8/Workshop/gunittest/Release
+/Workshop 8/Workshop/gunittest/x64
+/Workshop 8/Workshop/gunittest/gunittest
+/Workshop 8/Workshop/msunittest/.vs
+/Workshop 8/Workshop/msunittest/Debug
+/Workshop 8/Workshop/msunittest/Release
+/Workshop 8/Workshop/msunittest/x64
+/Workshop 8/Workshop/msunittest/msunittest
