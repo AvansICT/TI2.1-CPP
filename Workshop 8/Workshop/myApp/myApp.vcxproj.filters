@@ -15,4 +15,7 @@
     </ClInclude>
     <ClInclude Include="myapp.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
 </Project>

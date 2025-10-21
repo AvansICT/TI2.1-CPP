@@ -147,6 +147,9 @@
     <ClInclude Include="..\..\..\Lib\log.hpp" />
     <ClInclude Include="myapp.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
