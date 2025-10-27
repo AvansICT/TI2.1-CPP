@@ -161,7 +161,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Lib\log.cpp" />
-    <ClCompile Include="..\myApp\myapp.cpp" />
+    <ClCompile Include="..\myApp\mymath.cpp" />
     <ClCompile Include="msunittest.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -172,7 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Lib\log.hpp" />
-    <ClInclude Include="..\myApp\myapp.hpp" />
+    <ClInclude Include="..\myApp\mymath.hpp" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>

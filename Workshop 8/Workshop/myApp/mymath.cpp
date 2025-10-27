@@ -1,6 +1,6 @@
-#include "myapp.hpp"
+#include "mymath.hpp"
 
-namespace myApp {
+namespace myMath {
 
 // methods without class
 int add(int a, int b) {
@@ -56,4 +56,4 @@ int MathFunctions::modulus(int a, int b) const {
     return a % b;
 }
 
-} // namespace myApp
+} // namespace myMath

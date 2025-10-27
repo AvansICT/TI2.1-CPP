@@ -3,20 +3,20 @@
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="msunittest.cpp" />
-    <ClCompile Include="..\myApp\myapp.cpp">
-      <Filter>myApp</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Lib\log.cpp">
       <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\myApp\mymath.cpp">
+      <Filter>myApp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
-    <ClInclude Include="..\myApp\myapp.hpp">
-      <Filter>myApp</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Lib\log.hpp">
       <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\myApp\mymath.hpp">
+      <Filter>myApp</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

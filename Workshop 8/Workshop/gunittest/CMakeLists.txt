@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Add the executable
 add_executable(gunittest
     gunittest.cpp
-    ../myApp/myapp.cpp
+    ../myApp/mymath.cpp
     ../../../Lib/log.cpp
     ../../googletest-1.17.0/googletest/src/gtest.cc
     ../../googletest-1.17.0/googletest/src/gtest_main.cc

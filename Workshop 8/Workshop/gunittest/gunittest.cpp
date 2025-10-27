@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
-#include "myapp.hpp"
+#include "mymath.hpp"
 #include "log.hpp"
-using namespace myApp;  // to avoid repeating myApp::
+using namespace myMath;  // to avoid repeating myMath::
 
 namespace GUnitTestMyApp
 {

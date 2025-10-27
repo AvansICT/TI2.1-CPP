@@ -1,7 +1,7 @@
 #pragma once
 #include <stdexcept>
 
-namespace myApp {
+namespace myMath {
 
     // Basic operations without class just for demo working without class in unit tests
     int add(int a, int b) ;
@@ -23,4 +23,4 @@ namespace myApp {
         int divide(int a, int b) const;   // gooit std::invalid_argument bij deling door nul
         int modulus(int a, int b) const;  // gooit std::invalid_argument bij modulo door nul
     };
-} // namespace myApp
+} // namespace myMath

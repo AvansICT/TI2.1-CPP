@@ -32,14 +32,14 @@
     <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest-port.cc">
       <Filter>gtest</Filter>
     </ClCompile>
-    <ClCompile Include="..\myApp\myapp.cpp">
-      <Filter>myApp</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\googletest-1.17.0\googletest\src\gtest-all.cc">
       <Filter>gtest</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Lib\log.cpp">
       <Filter>Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\myApp\mymath.cpp">
+      <Filter>myApp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -60,7 +60,7 @@
     <ClInclude Include="..\..\googletest-1.17.0\googletest\src\gtest-internal-inl.h">
       <Filter>gtest</Filter>
     </ClInclude>
-    <ClInclude Include="..\myApp\myapp.hpp">
+    <ClInclude Include="..\myApp\mymath.hpp">
       <Filter>myApp</Filter>
     </ClInclude>
   </ItemGroup>

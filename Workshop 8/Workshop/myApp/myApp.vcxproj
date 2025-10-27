@@ -142,11 +142,11 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\Lib\log.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="myapp.cpp" />
+    <ClCompile Include="mymath.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Lib\log.hpp" />
-    <ClInclude Include="myapp.hpp" />
+    <ClInclude Include="mymath.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CMakeLists.txt" />
