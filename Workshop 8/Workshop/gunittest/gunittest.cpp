@@ -227,4 +227,4 @@ namespace GUnitTestMyApp
     {
         EXPECT_THROW(math.modulus(10, 0), std::invalid_argument);
     }
-} // namespace MSUnitTestMyApp2
+} // namespace GUnitTestMyApp
